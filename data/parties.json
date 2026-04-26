@@ -1,0 +1,164 @@
+{
+  "parties": [
+    {
+      "id": "S",
+      "name": "Socialdemokraterna",
+      "color": "#E8112d",
+      "short": "Socialdemokraterna",
+      "tagline": "Trygghet, jämlikhet och en stark välfärd.",
+      "description": "Sveriges historiskt dominerande parti. Förespråkar stark välfärd, aktiv arbetsmarknadspolitik och kollektiva lösningar. Grundade folkhemmet. Centrum-vänster på ekonomi, relativt konservativa på ordningsfrågor.",
+      "website": "https://www.socialdemokraterna.se",
+      "dimensions": {
+        "ekonomi": 3,
+        "frihet_trygghet": 4,
+        "individ_kollektiv": 3,
+        "progressiv_konservativ": 6,
+        "miljo_tillvaxt": 6
+      }
+    },
+    {
+      "id": "M",
+      "name": "Moderaterna",
+      "color": "#52BDEC",
+      "short": "Moderaterna",
+      "tagline": "Lägre skatter, mer frihet och ett tryggare Sverige.",
+      "description": "Det stora högerpartiet. Förespråkar lägre skatter, privatiseringar och marknadslösningar. Hård linje mot kriminalitet. Höger på ekonomi, konservativa på lag & ordning, relativt liberala socialt.",
+      "website": "https://moderaterna.se",
+      "dimensions": {
+        "ekonomi": 8,
+        "frihet_trygghet": 4,
+        "individ_kollektiv": 8,
+        "progressiv_konservativ": 4,
+        "miljo_tillvaxt": 5
+      }
+    },
+    {
+      "id": "SD",
+      "name": "Sverigedemokraterna",
+      "color": "#DDDD00",
+      "short": "Sverigedemokraterna",
+      "tagline": "Sverige och svenska intressen först.",
+      "description": "Nationalistiskt parti med fokus på restriktiv invandringspolitik och bevarandet av svensk kultur. Höger på migration och kulturvärden, mer vänster på välfärd. Tredje största parti i riksdagen.",
+      "website": "https://sd.se",
+      "dimensions": {
+        "ekonomi": 5,
+        "frihet_trygghet": 3,
+        "individ_kollektiv": 5,
+        "progressiv_konservativ": 2,
+        "miljo_tillvaxt": 4
+      }
+    },
+    {
+      "id": "C",
+      "name": "Centerpartiet",
+      "color": "#009933",
+      "short": "Centerpartiet",
+      "tagline": "Frihet, företagande och en levande landsbygd.",
+      "description": "Liberalt parti med rötter i landsbygdsrörelsen. Förespråkar frihandel, avregleringar och öppen invandring. Det mest utpräglat liberala partiet i riksdagen – höger på ekonomi, vänster på frihetsfrågor.",
+      "website": "https://www.centerpartiet.se",
+      "dimensions": {
+        "ekonomi": 8,
+        "frihet_trygghet": 8,
+        "individ_kollektiv": 9,
+        "progressiv_konservativ": 7,
+        "miljo_tillvaxt": 6
+      }
+    },
+    {
+      "id": "V",
+      "name": "Vänsterpartiet",
+      "color": "#DA291C",
+      "short": "Vänsterpartiet",
+      "tagline": "Jämlikhet, feminism och ett starkare samhälle.",
+      "description": "Det mest vänsterorienterade riksdagspartiet. Vill öka skatter på kapital, stärka fackföreningar och minska klyftor. Progressiva på sociala frågor, kritiska till NATO och EU.",
+      "website": "https://www.vansterpartiet.se",
+      "dimensions": {
+        "ekonomi": 1,
+        "frihet_trygghet": 7,
+        "individ_kollektiv": 1,
+        "progressiv_konservativ": 9,
+        "miljo_tillvaxt": 8
+      }
+    },
+    {
+      "id": "KD",
+      "name": "Kristdemokraterna",
+      "color": "#231F7E",
+      "short": "Kristdemokraterna",
+      "tagline": "Familjens och gemenskapens parti.",
+      "description": "Konservativt parti med kristen värdegrund. Starkt fokus på familj, valfrihet i välfärden och etikfrågor. Ekonomiskt höger, socialt konservativa, måttliga på migration.",
+      "website": "https://www.kristdemokraterna.se",
+      "dimensions": {
+        "ekonomi": 7,
+        "frihet_trygghet": 4,
+        "individ_kollektiv": 6,
+        "progressiv_konservativ": 3,
+        "miljo_tillvaxt": 4
+      }
+    },
+    {
+      "id": "L",
+      "name": "Liberalerna",
+      "color": "#006AB3",
+      "short": "Liberalerna",
+      "tagline": "Frihet, bildning och ett öppet samhälle.",
+      "description": "Klassiskt liberalt parti. Prioriterar utbildning, rättssäkerhet och EU-samarbete. Ekonomiskt center-höger, socialt liberala. Har varierat i samarbetskonstellationer.",
+      "website": "https://www.liberalerna.se",
+      "dimensions": {
+        "ekonomi": 7,
+        "frihet_trygghet": 7,
+        "individ_kollektiv": 7,
+        "progressiv_konservativ": 6,
+        "miljo_tillvaxt": 6
+      }
+    },
+    {
+      "id": "MP",
+      "name": "Miljöpartiet",
+      "color": "#83CF39",
+      "short": "Miljöpartiet",
+      "tagline": "För klimatet, rättvisan och framtiden.",
+      "description": "Grönt parti med fokus på klimatomställning, biologisk mångfald och social rättvisa. Vänster på fördelning, progressiva på invandring och jämlikhet, men definieras primärt av miljöfrågan.",
+      "website": "https://www.mp.se",
+      "dimensions": {
+        "ekonomi": 3,
+        "frihet_trygghet": 7,
+        "individ_kollektiv": 3,
+        "progressiv_konservativ": 9,
+        "miljo_tillvaxt": 10
+      }
+    }
+  ],
+  "dimensions": {
+    "ekonomi": {
+      "label": "Ekonomi",
+      "left_label": "Stark välfärd",
+      "right_label": "Fri marknad",
+      "description": "Hur mycket staten ska styra ekonomin kontra marknaden"
+    },
+    "frihet_trygghet": {
+      "label": "Frihet vs Trygghet",
+      "left_label": "Mer trygghet",
+      "right_label": "Mer frihet",
+      "description": "Balansen mellan individuell frihet och kollektiv säkerhet"
+    },
+    "individ_kollektiv": {
+      "label": "Individ vs Kollektiv",
+      "left_label": "Kollektiv",
+      "right_label": "Individ",
+      "description": "Om samhällsproblem löses bäst gemensamt eller individuellt"
+    },
+    "progressiv_konservativ": {
+      "label": "Progressiv vs Konservativ",
+      "left_label": "Traditionell",
+      "right_label": "Progressiv",
+      "description": "Synen på samhällsförändring, tradition och kulturvärden"
+    },
+    "miljo_tillvaxt": {
+      "label": "Miljö vs Tillväxt",
+      "left_label": "Ekonomisk tillväxt",
+      "right_label": "Miljöhänsyn",
+      "description": "Prioritering av ekonomisk tillväxt kontra miljö och klimat"
+    }
+  }
+}
