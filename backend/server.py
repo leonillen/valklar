@@ -15,7 +15,7 @@ from database import init_db, record_completion, get_total_completions, get_part
 from ai_explain import generate_explanation, generate_question_info
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://localhost:5050", "http://127.0.0.1:5050", "http://localhost:3000", "http://127.0.0.1:3000", "null"])
 init_db()
 
 parties_data, dimensions_data = load_parties()
@@ -41,7 +41,7 @@ def get_questions():
     } for q in questions]
     return jsonify({
         'questions': sanitized,
-        'session_seed': seed or 0
+        'session_seed': seed if seed is not None else 0
     })
 
 @app.route('/api/submit', methods=['POST'])
@@ -50,8 +50,16 @@ def submit_answers():
     if not body or 'answers' not in body:
         return jsonify({'error': 'answers saknas'}), 400
 
-    answers = body['answers']
+    raw_answers = body.get('answers', {})
+    if not isinstance(raw_answers, dict):
+        return jsonify({'error': 'answers måste vara ett objekt'}), 400
+    answers = {
+        k: v for k, v in raw_answers.items()
+        if isinstance(v, int) and 1 <= v <= 5
+    }
     seed = body.get('seed', 0)
+    if not isinstance(seed, int):
+        seed = 0
 
     questions = get_quiz_questions(n=50, seed=seed)
     question_ids = {q['id'] for q in questions}
@@ -92,7 +100,13 @@ def explain():
     if not body or not all(k in body for k in required):
         return jsonify({'error': 'Saknar fält'}), 400
 
+    valid_parties = list(parties_data.keys())
+    if body['top_party'] not in valid_parties:
+        return jsonify({'error': f'Ogiltigt top_party: {body["top_party"]}'}), 400
+
     seed = body['seed']
+    if not isinstance(seed, int):
+        seed = 0
     questions = get_quiz_questions(n=50, seed=seed)
     answered = [q for q in questions if q['id'] in body['answers']]
 
@@ -129,4 +143,5 @@ def question_info():
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5050))
-    app.run(debug=True, port=port)
+    debug_mode = os.environ.get('FLASK_DEBUG', 'true').lower() == 'true'
+    app.run(debug=debug_mode, port=port)
