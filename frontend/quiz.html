@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valkompass 2026 – Testet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <header class="quiz-header">
+    <div class="container">
+      <div class="quiz-header-inner">
+        <a href="index.html" style="font-weight: 700; font-size: 0.9rem; color: var(--text-muted);">← Valkompass</a>
+        <div class="progress-wrap">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+          <div class="progress-label" id="progress-label">Fråga 1 av 30</div>
+        </div>
+        <span id="progress-pct" style="font-size:0.85rem;color:var(--text-muted);font-weight:600;">0%</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="quiz-main">
+    <div class="container">
+      <div id="loading-state" style="text-align:center;padding:80px 0;color:var(--text-muted);">
+        Laddar frågor...
+      </div>
+      <div id="questions-container"></div>
+      <div id="nav-area" style="display:none;">
+        <div class="nav-buttons">
+          <button class="btn btn-ghost" id="btn-prev" onclick="prevQuestion()">← Föregående</button>
+          <button class="btn btn-primary" id="btn-next" onclick="nextQuestion()">Nästa →</button>
+        </div>
+        <div class="skip-link" onclick="skipQuestion()">Hoppa över denna fråga</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
