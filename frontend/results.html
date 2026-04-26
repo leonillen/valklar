@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ditt resultat – Valkompass 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/results.css">
+</head>
+<body>
+  <div class="container">
+    <header class="results-header">
+      <div class="tag" style="margin: 0 auto 16px; display:inline-flex;">Valkompass 2026</div>
+      <h1 id="results-title">Ditt resultat</h1>
+      <p class="subtitle" id="results-subtitle">Baserat på dina svar</p>
+    </header>
+
+    <section class="top-match" id="top-match-section"></section>
+
+    <div class="ai-explanation" id="ai-explanation">
+      <div class="ai-explanation-loading">
+        <div class="spinner"></div>
+        Analyserar ditt politiska profil...
+      </div>
+    </div>
+
+    <section class="dimensions-section">
+      <h2>Din politiska profil</h2>
+      <div id="dimensions-container"></div>
+    </section>
+
+    <section class="all-parties">
+      <h2>Alla partier</h2>
+      <div id="all-parties-list"></div>
+    </section>
+
+    <section class="share-section">
+      <h2>Dela ditt resultat</h2>
+      <div class="share-buttons">
+        <button class="btn btn-ghost" onclick="shareTwitter()">Dela på X/Twitter</button>
+        <button class="btn btn-ghost" onclick="shareFacebook()">Dela på Facebook</button>
+        <button class="btn btn-ghost" onclick="copyLink()">Kopiera länk</button>
+      </div>
+    </section>
+
+    <section class="party-detail-section">
+      <h2>Läs mer om partierna</h2>
+      <div id="party-details"></div>
+    </section>
+
+    <section class="restart-section">
+      <p>Vill du testa igen med andra frågor?</p>
+      <a href="quiz.html" class="btn btn-primary">Gör testet igen</a>
+    </section>
+  </div>
+
+  <script src="js/results.js"></script>
+</body>
+</html>
