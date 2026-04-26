@@ -23,14 +23,28 @@ def get_quiz_questions(n: int = 30, seed: int = None) -> list:
     for q in all_questions:
         by_area.setdefault(q['area'], []).append(q)
 
-    selected = []
+    # Shuffle each area's pool
     areas = list(by_area.keys())
-    per_area = max(1, n // len(areas))
-
     for area in areas:
-        pool = by_area[area]
-        take = min(per_area, len(pool))
-        selected.extend(random.sample(pool, take))
+        random.shuffle(by_area[area])
+
+    # Round-robin over areas until we have n questions or exhaust all
+    selected = []
+    area_indices = {area: 0 for area in areas}
+    n_capped = min(n, len(all_questions))
+
+    while len(selected) < n_capped:
+        added_any = False
+        for area in areas:
+            if len(selected) >= n_capped:
+                break
+            idx = area_indices[area]
+            if idx < len(by_area[area]):
+                selected.append(by_area[area][idx])
+                area_indices[area] += 1
+                added_any = True
+        if not added_any:
+            break
 
     random.shuffle(selected)
-    return selected[:n]
+    return selected
