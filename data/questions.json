@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0",
+  "questions": [
+    {
+      "id": "q001",
+      "text": "Den statliga inkomstskatten bör sänkas för höginkomsttagare.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Sverige har en av världens högsta marginalskatter. Debatten handlar om hur höga skatter påverkar arbetsutbud och konkurrenskraft.",
+      "party_positions": {
+        "S": 1, "M": 5, "SD": 3, "C": 4, "V": 1, "KD": 4, "L": 5, "MP": 1
+      }
+    },
+    {
+      "id": "q002",
+      "text": "Förmögenhetsskatten bör återinföras i Sverige.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Förmögenhetsskatten avskaffades 2007. Förespråkare menar att den minskar ojämlikhet, medan motståndare hävdar att den driver kapital utomlands.",
+      "party_positions": {
+        "S": 3, "M": 1, "SD": 2, "C": 1, "V": 5, "KD": 1, "L": 1, "MP": 4
+      }
+    },
+    {
+      "id": "q003",
+      "text": "Sverige bör ha ett lägre bolagsskatt för att locka investeringar.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Bolagsskatten är för närvarande 20,6 %. Frågan om nivån handlar om balansen mellan skatteintäkter och företagsklimat.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 3, "C": 5, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q004",
+      "text": "Vinster i välfärden bör begränsas kraftigt.",
+      "area": "Välfärd",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Debatten om vinstuttag i skola, vård och omsorg handlar om huruvida privata aktörer kan kombinera vinst med hög kvalitet i skattefinansierad verksamhet.",
+      "party_positions": {
+        "S": 5, "M": 1, "SD": 3, "C": 2, "V": 5, "KD": 2, "L": 1, "MP": 4
+      }
+    },
+    {
+      "id": "q005",
+      "text": "Sjukförsäkringen bör ge full kompensation utan tidsbegränsning.",
+      "area": "Välfärd",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "I dag finns bortre tidsgränser och ersättningsnivåer i sjukförsäkringen. Frågan handlar om trygghet kontra incitament att återgå till arbete.",
+      "party_positions": {
+        "S": 4, "M": 2, "SD": 3, "C": 2, "V": 5, "KD": 3, "L": 2, "MP": 4
+      }
+    },
+    {
+      "id": "q006",
+      "text": "Staten bör finansiera mer av äldreomsorgen nationellt snarare än via kommunerna.",
+      "area": "Välfärd",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Äldreomsorgen finansieras i dag primärt av kommunerna, vilket skapar geografiska skillnader. En nationell finansiering skulle öka jämlikheten men minska lokalt självstyre.",
+      "party_positions": {
+        "S": 4, "M": 2, "SD": 3, "C": 2, "V": 5, "KD": 3, "L": 3, "MP": 4
+      }
+    },
+    {
+      "id": "q007",
+      "text": "Invandringen till Sverige bör minskas kraftigt.",
+      "area": "Migration",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Sverige tog emot stora mängder asylsökande under 2015. Sedan dess har reglerna skärpts. Debatten handlar om integration, resurser och humanitärt ansvar.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 1, "V": 1, "KD": 4, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q008",
+      "text": "Permanenta uppehållstillstånd bör vara huvudregel för flyktingar.",
+      "area": "Migration",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Sverige övergick 2016 till tillfälliga uppehållstillstånd. Frågan gäller balansen mellan säker ställning för individen och incitament att återvända.",
+      "party_positions": {
+        "S": 2, "M": 2, "SD": 1, "C": 4, "V": 5, "KD": 2, "L": 4, "MP": 5
+      }
+    },
+    {
+      "id": "q009",
+      "text": "Krav på språkkunskaper och arbete bör ställas för att beviljas permanent uppehållstillstånd.",
+      "area": "Migration",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Integrationskrav kopplat till uppehållstillstånd förespråkas av flera partier som ett sätt att påskynda integration, men kritiseras för att skapa utsatthet.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q010",
+      "text": "Straffen för grova brott bör skärpas markant.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Debatten om straffskärpningar handlar om huruvida hårdare straff faktiskt minskar brottsligheten eller om andra insatser är mer effektiva.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q011",
+      "text": "Polisens resurser och befogenheter bör ökas för att bekämpa gängkriminalitet.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Gängkriminaliteten har ökat sedan 2010-talet. Mer resurser till polisen stöds brett, men omfånget av utökade befogenheter är mer kontroversiellt.",
+      "party_positions": {
+        "S": 4, "M": 5, "SD": 5, "C": 4, "V": 3, "KD": 5, "L": 4, "MP": 3
+      }
+    },
+    {
+      "id": "q012",
+      "text": "Preventiv frihetsberövning bör tillåtas för att förhindra terrorbrott.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Preventiv frihetsberövning innebär att man kan kvarhållas utan att ha begått ett brott. Det är kontroversiellt ur ett rättsstatsperspektiv.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 4, "C": 2, "V": 1, "KD": 3, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q013",
+      "text": "Sverige bör ha ett bindande mål att bli klimatneutralt senast 2045.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Sverige har i dag ett klimatpolitiskt ramverk med netto-nollmål 2045. Frågan handlar om hur ambitiöst och bindande målet ska vara.",
+      "party_positions": {
+        "S": 4, "M": 3, "SD": 2, "C": 4, "V": 4, "KD": 3, "L": 3, "MP": 5
+      }
+    },
+    {
+      "id": "q014",
+      "text": "Flygskatt bör höjas kraftigt för att minska flygets klimatpåverkan.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Flyget står för en liten del av Sveriges utsläpp men en stor del av enskilda personers klimatavtryck. Höjd flygskatt minskar utsläpp men påverkar rörligheten.",
+      "party_positions": {
+        "S": 3, "M": 2, "SD": 1, "C": 3, "V": 4, "KD": 2, "L": 3, "MP": 5
+      }
+    },
+    {
+      "id": "q015",
+      "text": "Kärnkraft bör vara en central del av Sveriges framtida energimix.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Sverige har stängt flera reaktorer och debatten om ny kärnkraft har intensifierats. Kärnkraft ger planerbar fossilfri el men är kostsam och tidskrävande att bygga.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 4, "V": 2, "KD": 5, "L": 4, "MP": 1
+      }
+    },
+    {
+      "id": "q016",
+      "text": "Skolan bör i högre grad styras nationellt snarare än kommunalt.",
+      "area": "Utbildning",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Det kommunala huvudmannaskapet för skolan har ifrågasatts på grund av ojämlika resultat. En nationell styrning kan öka likvärdigheten men minskar lokalt inflytande.",
+      "party_positions": {
+        "S": 4, "M": 3, "SD": 4, "C": 2, "V": 5, "KD": 3, "L": 3, "MP": 4
+      }
+    },
+    {
+      "id": "q017",
+      "text": "Friskolor med vinstintresse bör kunna verka inom det svenska skolsystemet.",
+      "area": "Utbildning",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Det fria skolvalet och friskolereformen från 1990-talet är en av de mest omdebatterade skolreformerna. Frågan handlar om valfrihet kontra likvärdig utbildning.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 3, "C": 4, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q018",
+      "text": "Högskoleutbildning bör vara avgiftsfri för alla studenter, inklusive utländska.",
+      "area": "Utbildning",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Sverige avskaffade avgifter för EU-studenter men tog 2011 in avgifter för studenter utanför EU/EES. Avgifter påverkar rekryteringen av utländska studenter.",
+      "party_positions": {
+        "S": 4, "M": 2, "SD": 1, "C": 3, "V": 5, "KD": 2, "L": 3, "MP": 4
+      }
+    },
+    {
+      "id": "q019",
+      "text": "Fackets inflytande över arbetsvillkor bör stärkas på bekostnad av arbetsgivarna.",
+      "area": "Arbetsmarknad",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Den svenska arbetsmarknadsmodellen bygger på kollektivavtal. Debatten handlar om maktbalansen mellan arbetstagare och arbetsgivare i förhandlingar.",
+      "party_positions": {
+        "S": 5, "M": 1, "SD": 3, "C": 2, "V": 5, "KD": 2, "L": 2, "MP": 4
+      }
+    },
+    {
+      "id": "q020",
+      "text": "En lagstadgad minimilön bör införas i Sverige.",
+      "area": "Arbetsmarknad",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Sverige saknar lagstadgad minimilön men har branschvisa minimilöner via kollektivavtal. EU:s minimilönedirektiv har aktualiserat frågan i den svenska debatten.",
+      "party_positions": {
+        "S": 3, "M": 1, "SD": 3, "C": 2, "V": 5, "KD": 2, "L": 2, "MP": 4
+      }
+    },
+    {
+      "id": "q021",
+      "text": "Det bör bli enklare för arbetsgivare att säga upp personal.",
+      "area": "Arbetsmarknad",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "LAS (lagen om anställningsskydd) reglerar anställningstrygghet. Flexiblare regler kan öka sysselsättning men minskar trygghet för arbetstagare.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 3, "C": 5, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q022",
+      "text": "Föräldraförsäkringen bör vara mer jämnt delad mellan föräldrar.",
+      "area": "Familj",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "I dag är en tredjedel av föräldrapenningdagarna reserverade för varje förälder. En mer jämn fördelning syftar till jämställdhet men inskränker familjens valfrihet.",
+      "party_positions": {
+        "S": 4, "M": 3, "SD": 2, "C": 3, "V": 5, "KD": 1, "L": 4, "MP": 5
+      }
+    },
+    {
+      "id": "q023",
+      "text": "Barnbidraget bör ökas som en universell familjestödjande åtgärd.",
+      "area": "Familj",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Barnbidraget ges i dag till alla föräldrar med barn under 16 år. Höjning av barnbidraget kostar mycket men ger stöd till alla barnfamiljer.",
+      "party_positions": {
+        "S": 4, "M": 3, "SD": 4, "C": 3, "V": 4, "KD": 5, "L": 3, "MP": 4
+      }
+    },
+    {
+      "id": "q024",
+      "text": "Adoptioner från utlandet bör tillåtas och underlättas.",
+      "area": "Familj",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Antalet internationella adoptioner har minskat kraftigt. Debatten handlar om barnets bästa, risken för olagliga adoptioner och alternativa omsorgsformer.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 3, "C": 4, "V": 3, "KD": 4, "L": 4, "MP": 3
+      }
+    },
+    {
+      "id": "q025",
+      "text": "Sveriges försvarsanslag bör höjas till minst 3 % av BNP.",
+      "area": "Försvar",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Sverige har kraftigt ökat försvarsanslagen och når 2 % av BNP 2028. Frågan om ytterligare höjning aktualiseras av säkerhetsläget i Europa.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 4, "C": 4, "V": 2, "KD": 5, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q026",
+      "text": "Allmän värnplikt bör gälla för alla medborgare oavsett kön.",
+      "area": "Försvar",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Sverige återinförde selektiv värnplikt 2017, och den är könsneutral i teorin men tillämpas selektivt. En allmän värnplikt skulle öka försvarsförmågan men är resurskrävande.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 4, "C": 3, "V": 2, "KD": 4, "L": 3, "MP": 3
+      }
+    },
+    {
+      "id": "q027",
+      "text": "Sverige bör ha en mer aktiv roll inom EU:s försvarssamarbete.",
+      "area": "EU & Utrikespolitik",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Som NATO-medlem och EU-land är Sverige en del av flera försvarsstrukturer. En mer aktiv roll i EU:s försvarssamarbete stärker kollektiv säkerhet men minskar nationell handlingsfrihet.",
+      "party_positions": {
+        "S": 4, "M": 4, "SD": 2, "C": 4, "V": 2, "KD": 4, "L": 4, "MP": 3
+      }
+    },
+    {
+      "id": "q028",
+      "text": "Sverige bör verka för ett federalt EU med mer överstatlighet.",
+      "area": "EU & Utrikespolitik",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Frågan om EU:s integration handlar om huruvida mer beslut ska fattas gemensamt i Bryssel eller om nationalstaternas suveränitet ska värnas.",
+      "party_positions": {
+        "S": 2, "M": 3, "SD": 1, "C": 4, "V": 2, "KD": 3, "L": 4, "MP": 3
+      }
+    },
+    {
+      "id": "q029",
+      "text": "Sverige bör öka sitt bistånd till minst 1 % av BNI.",
+      "area": "EU & Utrikespolitik",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Sveriges bistånd har varierat men målet om 1 % av BNI har historiskt uppfyllts. Det nuvarande målet är 0,7 %. Mer bistånd kostar pengar som kan användas inrikes.",
+      "party_positions": {
+        "S": 4, "M": 2, "SD": 1, "C": 3, "V": 5, "KD": 3, "L": 3, "MP": 5
+      }
+    },
+    {
+      "id": "q030",
+      "text": "Samkönade par bör ha samma rättigheter som heterosexuella par i alla avseenden.",
+      "area": "Sociala rättigheter",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Sverige har sedan 2009 könsneutral äktenskapslag. Frågor om surrogatmödraskap och adoptionsrättigheter är fortfarande föremål för debatt.",
+      "party_positions": {
+        "S": 5, "M": 4, "SD": 3, "C": 5, "V": 5, "KD": 2, "L": 5, "MP": 5
+      }
+    },
+    {
+      "id": "q031",
+      "text": "Aborträtten bör utvidgas och stärkas i lag.",
+      "area": "Sociala rättigheter",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Sverige har fri abort till vecka 18 och har en av världens mest liberala aborträtter. Debatten handlar om huruvida gränsen ska justeras och hur rätten ska skyddas.",
+      "party_positions": {
+        "S": 5, "M": 4, "SD": 3, "C": 4, "V": 5, "KD": 2, "L": 5, "MP": 5
+      }
+    },
+    {
+      "id": "q032",
+      "text": "Narkotikapolitiken bör liberaliseras och fokusera på vård snarare än straff.",
+      "area": "Sociala rättigheter",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Sverige har en av Europas striktaste narkotikapolitiker. Andra länder som Portugal och Holland har visat att avkriminalisering kan minska skador utan att öka användandet.",
+      "party_positions": {
+        "S": 2, "M": 2, "SD": 1, "C": 4, "V": 4, "KD": 1, "L": 4, "MP": 4
+      }
+    },
+    {
+      "id": "q033",
+      "text": "Statliga bidrag till landsbygdsutveckling bör ökas för att motverka urbanisering.",
+      "area": "Regional politik",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Urbaniseringstrender skapar utmaningar för landsbygdskommuner. Riktade statliga bidrag kan bromsa avfolkning men är dyra och kan motverka naturliga omflyttningar.",
+      "party_positions": {
+        "S": 3, "M": 2, "SD": 4, "C": 5, "V": 3, "KD": 4, "L": 3, "MP": 3
+      }
+    },
+    {
+      "id": "q034",
+      "text": "Regioner bör ges mer självbestämmande och makt på bekostnad av staten.",
+      "area": "Regional politik",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Det regionala självstyrandet regleras av kommunallagen. Mer regional autonomi kan leda till anpassade lösningar men också till geografisk ojämlikhet.",
+      "party_positions": {
+        "S": 2, "M": 3, "SD": 2, "C": 5, "V": 2, "KD": 3, "L": 4, "MP": 3
+      }
+    },
+    {
+      "id": "q035",
+      "text": "Pensionsåldern bör höjas för att säkra pensionssystemets finansiering.",
+      "area": "Pensioner",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Sverige har ett inkomstbaserat pensionssystem. En åldrande befolkning skapar press på systemet. Höjd pensionsålder är ekonomiskt hållbart men socialt kontroversiellt.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 2, "C": 4, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q036",
+      "text": "Garantipensionen bör höjas kraftigt för pensionärer med låg inkomst.",
+      "area": "Pensioner",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Garantipensionen är golvet i pensionssystemet. Höjning riktar stöd till de mest utsatta pensionärerna men kostar stora summor och finansieras via skatten.",
+      "party_positions": {
+        "S": 5, "M": 3, "SD": 4, "C": 3, "V": 5, "KD": 4, "L": 3, "MP": 4
+      }
+    },
+    {
+      "id": "q037",
+      "text": "Fler hyresrätter med rimliga hyror bör byggas med statliga subventioner.",
+      "area": "Bostäder",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Sverige har en bostadsbrist, särskilt i storstäderna. Statliga subventioner kan stimulera byggande av hyresrätter men kan snedvrida marknaden.",
+      "party_positions": {
+        "S": 5, "M": 2, "SD": 4, "C": 3, "V": 5, "KD": 3, "L": 2, "MP": 4
+      }
+    },
+    {
+      "id": "q038",
+      "text": "Hyresregleringen bör avskaffas och hyresmarknaden avregleras.",
+      "area": "Bostäder",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Det svenska hyressättningssystemet håller hyror lägre än marknadspriset, vilket skapar bostadskö och en svart marknad. Avreglering kan öka rörligheten men höja hyrorna.",
+      "party_positions": {
+        "S": 1, "M": 5, "SD": 2, "C": 5, "V": 1, "KD": 3, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q039",
+      "text": "Patientens valfrihet inom vården bör stärkas på bekostnad av central planering.",
+      "area": "Hälsa",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Valfrihetssystem inom vården ger patienter möjlighet att välja utförare. Det kan stärka patientmakten men försvårar planering och kan leda till ojämlik vård.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 3, "C": 5, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q040",
+      "text": "Tandvård bör inkluderas i det allmänna sjukförsäkringssystemet.",
+      "area": "Hälsa",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Tandvård subventioneras i dag delvis men är långt ifrån fullt täckt av landstinget. Ett statligt tandvårdssystem skulle minska ojämlikhet men kräver stora resurser.",
+      "party_positions": {
+        "S": 4, "M": 2, "SD": 3, "C": 3, "V": 5, "KD": 3, "L": 3, "MP": 4
+      }
+    }
+  ]
+}
