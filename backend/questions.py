@@ -16,8 +16,7 @@ def load_parties() -> tuple:
 def get_quiz_questions(n: int = 30, seed: int = None) -> list:
     """Välj n frågor balanserat över alla ämnesområden."""
     all_questions = load_questions()
-    if seed is not None:
-        random.seed(seed)
+    rng = random.Random(seed)
 
     by_area = {}
     for q in all_questions:
@@ -26,7 +25,7 @@ def get_quiz_questions(n: int = 30, seed: int = None) -> list:
     # Shuffle each area's pool
     areas = list(by_area.keys())
     for area in areas:
-        random.shuffle(by_area[area])
+        rng.shuffle(by_area[area])
 
     # Round-robin over areas until we have n questions or exhaust all
     selected = []
@@ -46,5 +45,5 @@ def get_quiz_questions(n: int = 30, seed: int = None) -> list:
         if not added_any:
             break
 
-    random.shuffle(selected)
+    rng.shuffle(selected)
     return selected

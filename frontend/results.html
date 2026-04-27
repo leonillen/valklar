@@ -4,35 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ditt resultat – Valkompass 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/results.css">
 </head>
 <body>
+  <div class="sv-stripe"></div>
+
   <div class="container">
+    <div class="results-bloc-bar"></div>
     <header class="results-header">
-      <div class="tag" style="margin: 0 auto 16px; display:inline-flex;">Valkompass 2026</div>
+      <div class="tag" style="margin: 0 auto 14px; display:inline-flex;">Valkompass 2026</div>
       <h1 id="results-title">Ditt resultat</h1>
       <p class="subtitle" id="results-subtitle">Baserat på dina svar</p>
     </header>
 
     <section class="top-match" id="top-match-section"></section>
 
+    <section class="all-parties">
+      <h2>Alla partier</h2>
+      <div class="all-parties-container" id="all-parties-list"></div>
+    </section>
+
     <div class="ai-explanation" id="ai-explanation">
       <div class="ai-explanation-loading">
         <div class="spinner"></div>
-        Analyserar ditt politiska profil...
+        Analyserar din politiska profil...
       </div>
     </div>
 
-    <section class="dimensions-section">
-      <h2>Din politiska profil</h2>
-      <div id="dimensions-container"></div>
+    <section class="outlier-section" id="outlier-section">
+      <div class="section-title-row">
+        <div>
+          <h2>Var sticker jag ut?</h2>
+          <p>Din politiska profil jämfört med en genomsnittlig svensk väljare.</p>
+        </div>
+        <span class="comparison-badge">Svenskt snitt</span>
+      </div>
+      <div class="outlier-container" id="outlier-container"></div>
     </section>
 
-    <section class="all-parties">
-      <h2>Alla partier</h2>
-      <div id="all-parties-list"></div>
+    <section class="restart-section restart-section-compact">
+      <p>Vill du testa igen med andra frågor?</p>
+      <a href="quiz.html" class="btn btn-primary">Gör testet igen</a>
     </section>
 
     <section class="share-section">
@@ -44,15 +60,6 @@
       </div>
     </section>
 
-    <section class="party-detail-section">
-      <h2>Läs mer om partierna</h2>
-      <div id="party-details"></div>
-    </section>
-
-    <section class="restart-section">
-      <p>Vill du testa igen med andra frågor?</p>
-      <a href="quiz.html" class="btn btn-primary">Gör testet igen</a>
-    </section>
   </div>
 
   <script src="js/results.js"></script>

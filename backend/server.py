@@ -9,8 +9,8 @@ import uuid
 
 load_dotenv(os.path.join('..', '.env'))
 
-from questions import get_quiz_questions, load_parties
-from scoring import calculate_match
+from questions import get_quiz_questions, load_parties, load_questions
+from scoring import calculate_average_voter_dimensions, calculate_match
 from database import init_db, record_completion, get_total_completions, get_party_distribution
 from ai_explain import generate_explanation, generate_question_info
 
@@ -62,10 +62,21 @@ def submit_answers():
         seed = 0
 
     questions = get_quiz_questions(n=50, seed=seed)
+    valid_areas = {q['area'] for q in load_questions()}
+    raw_priority_areas = body.get('priority_areas', [])
+    if not isinstance(raw_priority_areas, list):
+        raw_priority_areas = []
+    priority_areas = []
+    for area in raw_priority_areas:
+        if isinstance(area, str) and area in valid_areas and area not in priority_areas:
+            priority_areas.append(area)
+        if len(priority_areas) >= 4:
+            break
+
     question_ids = {q['id'] for q in questions}
     filtered_answers = {k: v for k, v in answers.items() if k in question_ids}
 
-    result = calculate_match(filtered_answers, questions, parties_data)
+    result = calculate_match(filtered_answers, questions, parties_data, priority_areas)
     if not result:
         return jsonify({'error': 'Inga svar att beräkna'}), 400
 
@@ -90,7 +101,9 @@ def submit_answers():
         'ranking': parties_enriched,
         'top_party': result['top_party'],
         'user_dimensions': result['user_dimensions'],
-        'dimensions_meta': dimensions_data
+        'average_dimensions': calculate_average_voter_dimensions(parties_data),
+        'dimensions_meta': dimensions_data,
+        'priority_areas': priority_areas
     })
 
 @app.route('/api/explain', methods=['POST'])
@@ -143,5 +156,5 @@ def question_info():
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5050))
-    debug_mode = os.environ.get('FLASK_DEBUG', 'true').lower() == 'true'
+    debug_mode = os.environ.get('FLASK_DEBUG', 'false').lower() == 'true'
     app.run(debug=debug_mode, port=port)

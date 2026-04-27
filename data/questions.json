@@ -440,6 +440,446 @@
       "party_positions": {
         "S": 4, "M": 2, "SD": 3, "C": 3, "V": 5, "KD": 3, "L": 3, "MP": 4
       }
+    },
+    {
+      "id": "q041",
+      "text": "Sverige bör införa ett tydligt volymmål för hur många asylsökande som tas emot varje år.",
+      "area": "Migration",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Volymmål i migrationspolitiken handlar om att politiskt styra mottagandet efter kapacitet, integration och välfärdsresurser. Kritiker menar att asylrätten inte bör styras av kvoter.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 1, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q042",
+      "text": "Svenskt medborgarskap bör kräva godkänt språkprov, samhällskunskapsprov och längre vistelsetid.",
+      "area": "Migration",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Skärpta krav för medborgarskap har blivit en central integrationsfråga. Förespråkare ser medborgarskap som slutpunkt efter etablering, medan motståndare varnar för ett permanent utanförskap.",
+      "party_positions": {
+        "S": 4, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q043",
+      "text": "Familjeåterförening för nyanlända bör begränsas hårdare än i dag.",
+      "area": "Migration",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Familjeåterförening väcker konflikt mellan humanitära skäl och integrationskapacitet. Stramare regler kan minska invandringen men splittra familjer längre.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 3, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q044",
+      "text": "Personer utan laglig rätt att stanna i Sverige bör kunna nekas icke-akut offentligt finansierad välfärd.",
+      "area": "Migration",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Frågan handlar om hur staten ska hantera personer som vistas i landet utan tillstånd. En strikt linje kan stärka återvändande, men väcker etiska frågor om vård, barn och utsatthet.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q045",
+      "text": "Arbetskraftsinvandring bör bara tillåtas för yrken där Sverige har tydlig brist på arbetskraft.",
+      "area": "Migration",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Arbetskraftsinvandring diskuteras utifrån lönenivåer, kompetensbrist och risk för exploatering. En mer selektiv modell gynnar bristyrken men kan slå mot företag med rekryteringsbehov.",
+      "party_positions": {
+        "S": 4, "M": 2, "SD": 5, "C": 1, "V": 4, "KD": 3, "L": 2, "MP": 2
+      }
+    },
+    {
+      "id": "q046",
+      "text": "Sverige bör aktivt stödja återvandring för personer som inte etablerat sig efter lång tid i landet.",
+      "area": "Migration",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Återvandringspolitik handlar om ekonomiska stöd, rådgivning och tydligare återvändandekrav. Förespråkare ser det som realistisk integrationspolitik, medan kritiker ser det som exkluderande.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 1, "V": 1, "KD": 4, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q047",
+      "text": "Staten bör kunna införa särskilda integrationszoner med andra skatte- och bidragsregler i utsatta områden.",
+      "area": "Integration",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Integrationszoner föreslås ibland för att öka arbete och företagande i områden med svag etablering. Frågan är kontroversiell eftersom särskild lagstiftning kan skapa olika villkor inom landet.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 4, "C": 4, "V": 1, "KD": 4, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q048",
+      "text": "Förskola bör vara obligatorisk för barn i familjer där svenska språket är svagt.",
+      "area": "Integration",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Obligatorisk språkförskola lyfts som ett sätt att minska skolsegregation och stärka svenska språket tidigt. Motståndare pekar på familjens självbestämmande och risken för riktade krav mot vissa grupper.",
+      "party_positions": {
+        "S": 4, "M": 4, "SD": 5, "C": 3, "V": 3, "KD": 3, "L": 5, "MP": 3
+      }
+    },
+    {
+      "id": "q049",
+      "text": "Sverige bör öka försvarsutgifterna till minst 3 procent av BNP även om det kräver nedskärningar på andra områden.",
+      "area": "Försvar",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Efter Sveriges NATO-inträde har nivån på försvarsutgifterna blivit en kärnfråga. Högre anslag stärker militär förmåga men konkurrerar med välfärd, skattesänkningar och klimatinvesteringar.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 4, "C": 4, "V": 1, "KD": 5, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q050",
+      "text": "Sverige bör tillåta permanenta NATO-baser på svenskt territorium.",
+      "area": "Försvar",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Frågan om NATO-närvaro i Sverige rör avskräckning, nationell suveränitet och relationen till Ryssland. Permanenta baser kan stärka säkerheten men göra Sverige mer integrerat i stormaktspolitik.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 4, "C": 4, "V": 1, "KD": 5, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q051",
+      "text": "Sverige bör fortsätta skicka avancerade vapen till Ukraina även om det försvagar Sveriges egna lager kortsiktigt.",
+      "area": "Försvar",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Stödet till Ukraina är både en säkerhetspolitisk och moralisk fråga. Vapenstöd kan stärka Europas säkerhet men kräver snabb återanskaffning och påverkar svensk beredskap.",
+      "party_positions": {
+        "S": 5, "M": 5, "SD": 4, "C": 5, "V": 3, "KD": 5, "L": 5, "MP": 4
+      }
+    },
+    {
+      "id": "q052",
+      "text": "Civilplikten bör byggas ut så att fler vuxna kan kallas in till vård, räddningstjänst och infrastruktur vid kris.",
+      "area": "Försvar",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Totalförsvaret omfattar både militärt och civilt försvar. Utbyggd civilplikt kan stärka krisberedskapen men innebär större skyldigheter för individen.",
+      "party_positions": {
+        "S": 4, "M": 4, "SD": 4, "C": 4, "V": 3, "KD": 4, "L": 4, "MP": 3
+      }
+    },
+    {
+      "id": "q053",
+      "text": "Svensk vapenexport bör tillåtas till fler länder om det stärker Sveriges säkerhetspolitiska relationer.",
+      "area": "EU & Utrikespolitik",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Vapenexport väger industri, arbetstillfällen och säkerhet mot mänskliga rättigheter och risken att svenska vapen används i konflikter. Frågan skär mellan realpolitik och värderingsstyrd utrikespolitik.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 4, "C": 3, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q054",
+      "text": "Polisen bör få använda visitationszoner i områden med hög risk för gängvåld.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Visitationszoner ger polisen större möjlighet att söka efter vapen utan konkret brottsmisstanke. Förespråkare ser det som nödvändigt mot gängvåld, kritiker som ett hot mot rättssäkerhet och likabehandling.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q055",
+      "text": "Anonyma vittnen bör tillåtas i fler brottmål.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Anonyma vittnen kan göra det lättare att få människor att vittna mot grov kriminalitet. Samtidigt utmanar det den åtalades möjlighet att granska bevisningen.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 2, "V": 1, "KD": 5, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q056",
+      "text": "Straffmyndighetsåldern bör sänkas för grova våldsbrott.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "När yngre barn används i grov kriminalitet väcks frågan om lägre straffmyndighetsålder. Motargumentet är att barn behöver sociala insatser och att hårdare straff kan förvärra kriminalitet.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q057",
+      "text": "Utländska medborgare som döms för allvarliga brott bör utvisas i betydligt fler fall.",
+      "area": "Lag & Ordning",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Utvisning vid brott kombinerar kriminalpolitik och migrationspolitik. Frågan handlar om proportionalitet, återfallsrisk, familjeanknytning och vilket ansvar Sverige har för personer som bor här.",
+      "party_positions": {
+        "S": 4, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q058",
+      "text": "Kameraövervakning med ansiktsigenkänning bör tillåtas på fler offentliga platser.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Ansiktsigenkänning kan effektivisera brottsbekämpning men väcker starka integritetsfrågor. Debatten gäller hur mycket övervakning ett demokratiskt samhälle bör acceptera.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q059",
+      "text": "Skattesänkningar för arbetande hushåll bör prioriteras framför höjda statsbidrag till välfärden.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Frågan fångar kärnkonflikten mellan arbetslinje och offentlig finansiering. Lägre skatt kan stärka köpkraft och arbetsincitament, medan välfärden samtidigt pressas av demografi och kostnader.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 4, "C": 5, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q060",
+      "text": "Matmomsen bör sänkas permanent för att hjälpa hushåll med höga levnadskostnader.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Sänkt matmoms ger bred prisavlastning men är dyrt och träffar även hushåll med god ekonomi. Alternativet är mer riktade bidrag eller skattesänkningar.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 2, "V": 3, "KD": 4, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q061",
+      "text": "Fastighetsskatten bör återinföras för dyra villor och bostadsrätter.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Fastighetsskatt lyfts som en effektiv skatt på kapital och boendevärden. Den är samtidigt impopulär eftersom den kan drabba hushåll med låg inkomst men högt bostadsvärde.",
+      "party_positions": {
+        "S": 3, "M": 1, "SD": 1, "C": 1, "V": 5, "KD": 1, "L": 2, "MP": 4
+      }
+    },
+    {
+      "id": "q062",
+      "text": "Skatten på investeringssparkonton bör höjas för stora kapitalinnehav.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "ISK har gjort aktiesparande enklare och populärt. Högre skatt på stora innehav kan öka rättvisan men riskerar att minska sparande och kapitalbildning.",
+      "party_positions": {
+        "S": 3, "M": 1, "SD": 2, "C": 1, "V": 5, "KD": 1, "L": 1, "MP": 4
+      }
+    },
+    {
+      "id": "q063",
+      "text": "A-kassan bör bli mer generös även om det kräver högre skatter eller avgifter.",
+      "area": "Arbetsmarknad",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "A-kassan är central i trygghetssystemet vid arbetslöshet. Högre ersättning ger trygghet vid omställning, men kan enligt kritiker försvaga drivkrafter att snabbt ta arbete.",
+      "party_positions": {
+        "S": 5, "M": 2, "SD": 3, "C": 2, "V": 5, "KD": 3, "L": 2, "MP": 4
+      }
+    },
+    {
+      "id": "q064",
+      "text": "Bidrag bör villkoras hårdare med aktivitet, utbildning eller arbete.",
+      "area": "Välfärd",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Aktivitetskrav i bidragssystemen är en konflikt mellan arbetslinje och social trygghet. Förespråkare vill minska bidragsberoende, medan kritiker varnar för ökad fattigdom och administration.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 4, "V": 1, "KD": 5, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q065",
+      "text": "Elstöd och energisubventioner bör riktas till hushåll snarare än till företag.",
+      "area": "Ekonomi",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Höga elpriser väcker frågan om vem staten ska stötta först. Hushållsstöd skyddar privat ekonomi, medan företagsstöd kan rädda jobb och konkurrenskraft.",
+      "party_positions": {
+        "S": 4, "M": 3, "SD": 4, "C": 2, "V": 5, "KD": 4, "L": 3, "MP": 3
+      }
+    },
+    {
+      "id": "q066",
+      "text": "Kommuner och regioner bör tvingas effektivisera innan staten skjuter till mer pengar.",
+      "area": "Välfärd",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Välfärdens finansiering präglas av kostnadstryck i vård, skola och omsorg. Krav på effektivisering kan bromsa skattehöjningar men riskerar att bli nedskärningar i praktiken.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 4, "C": 4, "V": 1, "KD": 4, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q067",
+      "text": "Nya kärnkraftsreaktorer bör få statliga kreditgarantier och långsiktigt prisstöd.",
+      "area": "Energi",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Ny kärnkraft kräver stora investeringar och lång tidshorisont. Statligt stöd kan göra projekten möjliga men innebär att skattebetalare tar en del av den ekonomiska risken.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 5, "MP": 1
+      }
+    },
+    {
+      "id": "q068",
+      "text": "Kommuners veto mot vindkraft bör begränsas för att snabbare bygga ut elproduktionen.",
+      "area": "Energi",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Vindkraft kan byggas snabbare än många andra kraftslag, men möter ofta lokalt motstånd. Begränsat kommunalt veto kan öka elproduktionen men minska lokal demokrati.",
+      "party_positions": {
+        "S": 4, "M": 3, "SD": 1, "C": 4, "V": 4, "KD": 2, "L": 4, "MP": 5
+      }
+    },
+    {
+      "id": "q069",
+      "text": "Bränsleskatten bör sänkas även om det gör klimatmålen svårare att nå.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Bränslepriser påverkar hushåll, landsbygd och företag direkt. Lägre skatt kan underlätta vardagen men minskar styrningen bort från fossila bränslen.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 2, "V": 1, "KD": 5, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q070",
+      "text": "Sverige bör gå före EU med hårdare klimatkrav på industri och transporter.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Att gå före kan driva innovation och minska utsläpp snabbare. Kritiker menar att svensk konkurrenskraft skadas om andra länder inte inför liknande krav.",
+      "party_positions": {
+        "S": 3, "M": 2, "SD": 1, "C": 4, "V": 5, "KD": 2, "L": 3, "MP": 5
+      }
+    },
+    {
+      "id": "q071",
+      "text": "Skogsbruket bör få större frihet även om det minskar skyddet för biologisk mångfald.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Svenskt skogsbruk är viktigt för export, jobb och klimatråvaror, men påverkar arter och ekosystem. Frågan är laddad mellan äganderätt och naturvård.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 5, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q072",
+      "text": "Staten bör subventionera elbilar mer för att påskynda omställningen.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Elbilsstöd kan påskynda utsläppsminskningar i transportsektorn men kritiseras för att gynna hushåll som redan har råd med ny bil.",
+      "party_positions": {
+        "S": 3, "M": 2, "SD": 1, "C": 4, "V": 3, "KD": 2, "L": 3, "MP": 5
+      }
+    },
+    {
+      "id": "q073",
+      "text": "Gruvor för metaller till batterier och elnät bör prioriteras även när lokal miljöpåverkan blir stor.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Den gröna omställningen kräver metaller, men nya gruvor påverkar natur, vatten, rennäring och lokalsamhällen. Frågan synliggör konflikten mellan klimatteknik och lokal miljö.",
+      "party_positions": {
+        "S": 4, "M": 5, "SD": 4, "C": 3, "V": 2, "KD": 4, "L": 4, "MP": 1
+      }
+    },
+    {
+      "id": "q074",
+      "text": "Privata sjukvårdsförsäkringar bör begränsas om de leder till snabbare vård för vissa patienter.",
+      "area": "Hälsa",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Privata vårdförsäkringar väcker frågor om köer, jämlikhet och valfrihet. Motståndare ser gräddfiler, medan förespråkare menar att de kan avlasta offentlig vård.",
+      "party_positions": {
+        "S": 4, "M": 1, "SD": 3, "C": 2, "V": 5, "KD": 2, "L": 2, "MP": 4
+      }
+    },
+    {
+      "id": "q075",
+      "text": "Staten bör ta över huvudansvaret för sjukvården från regionerna.",
+      "area": "Hälsa",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Ett statligt huvudmannaskap för vården kan minska regionala skillnader och stärka styrningen. Samtidigt riskerar lokal anpassning och regionalt självstyre att försvagas.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 1, "V": 4, "KD": 5, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q076",
+      "text": "Mobiltelefoner bör förbjudas helt under skoldagen i grundskolan.",
+      "area": "Utbildning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Mobilförbud i skolan kopplas till studiero, koncentration och psykisk hälsa. Motståndare pekar på lokalt ansvar och att digitala verktyg kan vara en del av undervisningen.",
+      "party_positions": {
+        "S": 4, "M": 5, "SD": 5, "C": 3, "V": 3, "KD": 5, "L": 5, "MP": 3
+      }
+    },
+    {
+      "id": "q077",
+      "text": "Religiösa friskolor bör förbjudas.",
+      "area": "Utbildning",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Religiösa friskolor väcker frågor om segregation, religionsfrihet och barns rätt till en allsidig utbildning. Ett förbud skulle inskränka etableringsfrihet men kan stärka sekulär likvärdighet.",
+      "party_positions": {
+        "S": 4, "M": 3, "SD": 5, "C": 2, "V": 5, "KD": 1, "L": 5, "MP": 3
+      }
+    },
+    {
+      "id": "q078",
+      "text": "Public service bör få minskat anslag och smalare uppdrag.",
+      "area": "Demokrati & Media",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Public service-debatten handlar om oberoende journalistik, kulturutbud och konkurrens med privata medier. Ett smalare uppdrag kan minska kostnader men också försvaga gemensam nyhetsförmedling.",
+      "party_positions": {
+        "S": 1, "M": 3, "SD": 5, "C": 2, "V": 1, "KD": 3, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q079",
+      "text": "Yttrandefriheten bör väga tyngre än risken för utrikespolitiska konflikter vid koranbränningar och liknande aktioner.",
+      "area": "Demokrati & Media",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Provokativa aktioner har aktualiserat gränsen mellan yttrandefrihet, religionskritik, ordningsrisker och Sveriges relationer med andra länder. Frågan saknar enkla blockgränser.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 4, "V": 3, "KD": 3, "L": 5, "MP": 3
+      }
+    },
+    {
+      "id": "q080",
+      "text": "Kulturstöd bör i högre grad styras av publikintresse och mindre av politiska kvalitetsbedömningar.",
+      "area": "Kultur",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Kulturpolitiken balanserar konstnärlig frihet, offentlig finansiering och publik efterfrågan. Mer publikstyrning kan öka legitimiteten men missgynna smalare kulturformer.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 3, "V": 1, "KD": 4, "L": 3, "MP": 2
+      }
     }
   ]
 }

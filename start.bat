@@ -9,26 +9,29 @@ echo.
 
 cd /d "%~dp0"
 
-:: Starta backend i nytt fönster
-echo  Startar backend (port 5050)...
-start "Valkompass Backend" cmd /k "chcp 65001 >nul && cd /d "%~dp0backend" && set PYTHONIOENCODING=utf-8 && python server.py"
+set "BACKDIR=%~dp0backend"
+set "FRONTDIR=%~dp0frontend"
 
-:: Vänta på att servern ska starta
+:: Starta backend i nytt fonster
+echo  Startar backend (port 5050)...
+start "Valkompass Backend" cmd /k "chcp 65001 >nul && cd /d "%BACKDIR%" && set PYTHONIOENCODING=utf-8 && set FLASK_DEBUG=true && python server.py"
+
+:: Vanta pa att servern ska starta
 timeout /t 3 /nobreak >nul
 
-:: Starta frontend med Python HTTP-server i nytt fönster
+:: Starta frontend med Python HTTP-server i nytt fonster
 echo  Startar frontend (port 3000)...
-start "Valkompass Frontend" cmd /k "chcp 65001 >nul && cd /d "%~dp0frontend" && python -m http.server 3000"
+start "Valkompass Frontend" cmd /k "chcp 65001 >nul && cd /d "%FRONTDIR%" && python -m http.server 3000"
 
-:: Vänta och öppna webbläsaren
+:: Vanta och oppna webblesaren
 timeout /t 2 /nobreak >nul
-echo  Öppnar webbläsare...
+echo  Oppnar webblesare...
 start http://localhost:3000
 
 echo.
 echo  Backend:  http://localhost:5050
 echo  Frontend: http://localhost:3000
 echo.
-echo  Stäng de två terminalfönstren för att stoppa.
+echo  Stang de tva terminalfonstren for att stoppa.
 echo.
 pause

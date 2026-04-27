@@ -10,11 +10,13 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
+  <div class="sv-stripe"></div>
+
   <main class="container">
     <section class="hero">
       <div class="hero-eyebrow">
@@ -23,14 +25,19 @@
       </div>
       <h1 class="hero-title">
         Hitta ditt parti.<br>
-        <span class="highlight">På riktigt.</span>
+        <span class="highlight-red">På</span> <span class="highlight-blue">riktigt.</span>
       </h1>
       <p class="hero-sub">
         Inte ytliga frågor. Inte vaga matchningar. En kompass som förstår hur du
         tänker – och förklarar varför du matchar med just det partiet.
       </p>
+      <div class="bloc-versus">
+        <span class="bloc-red">Rödgröna blocket</span>
+        <span class="bloc-vs">mot</span>
+        <span class="bloc-blue">Högerblocket</span>
+      </div>
       <div class="hero-cta">
-        <a href="quiz.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 16px 36px;">
+        <a href="quiz.html" class="btn btn-primary">
           Starta testet →
         </a>
         <span class="cta-note">~10 minuter · 30 frågor · Gratis</span>
@@ -51,53 +58,98 @@
       </div>
     </section>
 
+    <section class="parties-section">
+      <h2>Inkluderade partier</h2>
+      <div class="parties-blocs">
+        <div class="parties-bloc parties-bloc-red">
+          <div class="bloc-label-header bloc-label-red">
+            <span class="bloc-dot" style="background:var(--red-bloc)"></span>
+            Rödgröna blocket
+          </div>
+          <div class="parties-bloc-chips">
+            <div class="party-chip">
+              <div class="party-badge" style="background:#E8112d;color:#fff;">S</div>
+              <span class="party-chip-name">Socialdemokraterna</span>
+            </div>
+            <div class="party-chip">
+              <div class="party-badge" style="background:#DA291C;color:#fff;">V</div>
+              <span class="party-chip-name">Vänsterpartiet</span>
+            </div>
+            <div class="party-chip">
+              <div class="party-badge" style="background:#83CF39;color:#1A2E00;">MP</div>
+              <span class="party-chip-name">Miljöpartiet</span>
+            </div>
+            <div class="party-chip">
+              <div class="party-badge" style="background:#009933;color:#fff;">C</div>
+              <span class="party-chip-name">Centerpartiet</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloc-divider-vertical"></div>
+
+        <div class="parties-bloc parties-bloc-blue">
+          <div class="bloc-label-header bloc-label-blue">
+            <span class="bloc-dot" style="background:var(--blue-bloc)"></span>
+            Högerblocket
+          </div>
+          <div class="parties-bloc-chips">
+            <div class="party-chip">
+              <div class="party-badge" style="background:#52BDEC;color:#0A2540;">M</div>
+              <span class="party-chip-name">Moderaterna</span>
+            </div>
+            <div class="party-chip">
+              <div class="party-badge" style="background:#DDDD00;color:#1A1A00;">SD</div>
+              <span class="party-chip-name">Sverigedemokraterna</span>
+            </div>
+            <div class="party-chip">
+              <div class="party-badge" style="background:#231F7E;color:#fff;">KD</div>
+              <span class="party-chip-name">Kristdemokraterna</span>
+            </div>
+            <div class="party-chip">
+              <div class="party-badge" style="background:#006AB3;color:#fff;">L</div>
+              <span class="party-chip-name">Liberalerna</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section class="features">
-      <div class="tag" style="margin-bottom: 16px;">Vad gör oss annorlunda</div>
-      <h2 style="font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px;">Mer än ja/nej-frågor</h2>
-      <p style="color: var(--text-muted); margin-bottom: 0;">Vi mäter din politiska personlighet, inte bara dina åsikter.</p>
+      <div class="tag" style="margin-bottom: 14px;">Vad gör oss annorlunda</div>
+      <h2>Mer än ja/nej-frågor</h2>
+      <p>Vi mäter din politiska personlighet, inte bara dina åsikter.</p>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">🧠</div>
+          <div class="feature-icon feature-icon-ai" aria-hidden="true"></div>
           <div class="feature-title">AI-förklaring</div>
           <div class="feature-desc">Groq AI förklarar personligt varför du matchar med just det partiet.</div>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">📊</div>
+          <div class="feature-icon feature-icon-dimensions" aria-hidden="true"></div>
           <div class="feature-title">5 dimensioner</div>
           <div class="feature-desc">Frihet vs trygghet, individ vs kollektiv, ekonomi, miljö och mer.</div>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🔀</div>
-          <div class="feature-title">250+ frågor</div>
+          <div class="feature-icon feature-icon-rotation" aria-hidden="true"></div>
+          <div class="feature-title">80 frågor</div>
           <div class="feature-desc">Frågorna roteras – du får inte exakt samma test varje gång.</div>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">📱</div>
+          <div class="feature-icon feature-icon-share" aria-hidden="true"></div>
           <div class="feature-title">Delbara resultat</div>
           <div class="feature-desc">Dela ditt resultat på sociala medier och jämför med vänner.</div>
         </div>
       </div>
     </section>
 
-    <section class="parties-section">
-      <h2>Inkluderade partier</h2>
-      <div class="parties-grid" id="parties-chips">
-        <div class="party-chip"><div class="party-dot" style="background:#E8112d"></div>Socialdemokraterna</div>
-        <div class="party-chip"><div class="party-dot" style="background:#52BDEC"></div>Moderaterna</div>
-        <div class="party-chip"><div class="party-dot" style="background:#DDDD00"></div>Sverigedemokraterna</div>
-        <div class="party-chip"><div class="party-dot" style="background:#009933"></div>Centerpartiet</div>
-        <div class="party-chip"><div class="party-dot" style="background:#DA291C"></div>Vänsterpartiet</div>
-        <div class="party-chip"><div class="party-dot" style="background:#231F7E"></div>Kristdemokraterna</div>
-        <div class="party-chip"><div class="party-dot" style="background:#006AB3"></div>Liberalerna</div>
-        <div class="party-chip"><div class="party-dot" style="background:#83CF39"></div>Miljöpartiet</div>
-      </div>
-    </section>
-
     <footer class="footer">
       <p>Valkompass 2026 är ett oberoende projekt utan politisk agenda.</p>
-      <p style="margin-top: 6px;">Alla partisvar är baserade på officiella partiprogram och riksdagsvotigar.</p>
+      <p>Alla partisvar är baserade på officiella partiprogram och riksdagsvotigar.</p>
     </footer>
   </main>
+
   <script src="js/landing.js"></script>
 </body>
 </html>
