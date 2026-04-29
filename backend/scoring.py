@@ -1,20 +1,28 @@
 PARTIES = ['S', 'M', 'SD', 'C', 'V', 'KD', 'L', 'MP']
 PRIORITY_AREA_MULTIPLIER = 2.0
 
-VOTE_SHARE_2022 = {
-    'S': 30.33,
-    'M': 19.10,
-    'SD': 20.54,
-    'C': 6.71,
-    'V': 6.75,
-    'KD': 5.34,
-    'L': 4.61,
-    'MP': 5.08
+try:
+    from calibration import get_priority_area
+except ImportError:
+    from backend.calibration import get_priority_area
+
+# A hand-tuned Swedish voter reference profile on the same 1-10 axes as parties.
+# A pure vote-share weighted party average lands close to 5 on most axes because
+# the party system cancels itself out, which makes the result comparison look
+# artificially neutral. These values are intentionally a bit more opinionated:
+# pro-welfare, security-oriented, mildly collectivist, socially fairly modern,
+# and moderately climate-leaning.
+AVERAGE_VOTER_DIMENSIONS = {
+    'ekonomi': 4.2,
+    'frihet_trygghet': 3.6,
+    'individ_kollektiv': 4.1,
+    'progressiv_konservativ': 5.4,
+    'miljo_tillvaxt': 5.6
 }
 
 def get_question_weight(question: dict, priority_areas: set = None) -> float:
     weight = question.get('weight', 1.0)
-    if priority_areas and question.get('area') in priority_areas:
+    if priority_areas and get_priority_area(question) in priority_areas:
         weight *= PRIORITY_AREA_MULTIPLIER
     return weight
 
@@ -87,20 +95,17 @@ def calculate_user_dimensions(answers: dict, questions: list, parties_data: dict
     }
 
 def calculate_average_voter_dimensions(parties_data: dict) -> dict:
-    """Vikta partiernas dimensionspositioner med riksdagsvalet 2022."""
-    weighted = {}
-    totals = {}
-
-    for party_id, vote_share in VOTE_SHARE_2022.items():
-        dimensions = parties_data.get(party_id, {}).get('dimensions', {})
-        for dim, value in dimensions.items():
-            weighted[dim] = weighted.get(dim, 0.0) + value * vote_share
-            totals[dim] = totals.get(dim, 0.0) + vote_share
+    """Return an estimated Swedish voter reference profile."""
+    available_dimensions = {
+        dim
+        for party in parties_data.values()
+        for dim in party.get('dimensions', {})
+    }
 
     return {
-        dim: round(weighted[dim] / totals[dim], 1)
-        for dim in weighted
-        if totals.get(dim, 0) > 0
+        dim: value
+        for dim, value in AVERAGE_VOTER_DIMENSIONS.items()
+        if dim in available_dimensions
     }
 
 def infer_question_direction(question: dict, dimension: str, parties_data: dict) -> int:

@@ -3,7 +3,7 @@
     {
       "id": "S",
       "name": "Socialdemokraterna",
-      "color": "#E8112d",
+      "color": "#D83B36",
       "short": "Socialdemokraterna",
       "tagline": "Trygghet, jämlikhet och en stark välfärd.",
       "description": "Sveriges historiskt dominerande parti. Förespråkar stark välfärd, aktiv arbetsmarknadspolitik och kollektiva lösningar. Grundade folkhemmet. Centrum-vänster på ekonomi, relativt konservativa på ordningsfrågor.",
@@ -19,7 +19,7 @@
     {
       "id": "M",
       "name": "Moderaterna",
-      "color": "#52BDEC",
+      "color": "#3C4E82",
       "short": "Moderaterna",
       "tagline": "Lägre skatter, mer frihet och ett tryggare Sverige.",
       "description": "Det stora högerpartiet. Förespråkar lägre skatter, privatiseringar och marknadslösningar. Hård linje mot kriminalitet. Höger på ekonomi, konservativa på lag & ordning, relativt liberala socialt.",
@@ -35,7 +35,7 @@
     {
       "id": "SD",
       "name": "Sverigedemokraterna",
-      "color": "#DDDD00",
+      "color": "#DCC715",
       "short": "Sverigedemokraterna",
       "tagline": "Sverige och svenska intressen först.",
       "description": "Nationalistiskt parti med fokus på restriktiv invandringspolitik och bevarandet av svensk kultur. Höger på migration och kulturvärden, mer vänster på välfärd. Tredje största parti i riksdagen.",
@@ -51,7 +51,7 @@
     {
       "id": "C",
       "name": "Centerpartiet",
-      "color": "#009933",
+      "color": "#005A44",
       "short": "Centerpartiet",
       "tagline": "Frihet, företagande och en levande landsbygd.",
       "description": "Liberalt parti med rötter i landsbygdsrörelsen. Förespråkar frihandel, avregleringar och öppen invandring. Det mest utpräglat liberala partiet i riksdagen – höger på ekonomi, vänster på frihetsfrågor.",
@@ -67,7 +67,7 @@
     {
       "id": "V",
       "name": "Vänsterpartiet",
-      "color": "#DA291C",
+      "color": "#9E2B27",
       "short": "Vänsterpartiet",
       "tagline": "Jämlikhet, feminism och ett starkare samhälle.",
       "description": "Det mest vänsterorienterade riksdagspartiet. Vill öka skatter på kapital, stärka fackföreningar och minska klyftor. Progressiva på sociala frågor, kritiska till NATO och EU.",
@@ -83,7 +83,7 @@
     {
       "id": "KD",
       "name": "Kristdemokraterna",
-      "color": "#231F7E",
+      "color": "#557CB1",
       "short": "Kristdemokraterna",
       "tagline": "Familjens och gemenskapens parti.",
       "description": "Konservativt parti med kristen värdegrund. Starkt fokus på familj, valfrihet i välfärden och etikfrågor. Ekonomiskt höger, socialt konservativa, måttliga på migration.",
@@ -99,7 +99,7 @@
     {
       "id": "L",
       "name": "Liberalerna",
-      "color": "#006AB3",
+      "color": "#87BFE3",
       "short": "Liberalerna",
       "tagline": "Frihet, bildning och ett öppet samhälle.",
       "description": "Klassiskt liberalt parti. Prioriterar utbildning, rättssäkerhet och EU-samarbete. Ekonomiskt center-höger, socialt liberala. Har varierat i samarbetskonstellationer.",
@@ -115,7 +115,7 @@
     {
       "id": "MP",
       "name": "Miljöpartiet",
-      "color": "#83CF39",
+      "color": "#2FAA35",
       "short": "Miljöpartiet",
       "tagline": "För klimatet, rättvisan och framtiden.",
       "description": "Grönt parti med fokus på klimatomställning, biologisk mångfald och social rättvisa. Vänster på fördelning, progressiva på invandring och jämlikhet, men definieras primärt av miljöfrågan.",

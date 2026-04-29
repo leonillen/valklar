@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "brand": {
+    "productName": "Valkompass",
+    "electionLabel": "Valkompass 2026",
+    "partnerLabel": "Oberoende · Opartisk",
+    "marketLabel": "Sverige · Riksdagsvalet",
+    "logoInitials": "VK",
+    "logoUrl": ""
+  },
+  "theme": {
+    "accent": "#2F3440",
+    "accentHover": "#1F2430",
+    "background": "#F6F8FB",
+    "surface": "#FFFFFF",
+    "elevated": "#EDF0F6",
+    "text": "#16150F",
+    "muted": "#6B6860",
+    "redBloc": "#D83B36",
+    "blueBloc": "#3C4E82"
+  },
+  "landing": {
+    "titleLine1": "Hitta ditt parti.",
+    "titleLine2Prefix": "På",
+    "titleLine2Strong": "riktigt.",
+    "subtitle": "Inte ytliga frågor. Inte vaga matchningar. En kompass som förstår hur du tänker och förklarar varför du matchar med just det partiet.",
+    "primaryCta": "Starta testet",
+    "ctaNote": "~10 minuter · 30 frågor · Gratis",
+    "leftBlocLabel": "Rödgröna blocket",
+    "rightBlocLabel": "Högerblocket",
+    "fallbackCompletions": "1 200+"
+  },
+  "quiz": {
+    "homeLabel": "Valkompass",
+    "loadingText": "Laddar frågor...",
+    "loadingError": "Kunde inte ladda frågor. Kontrollera att servern körs.",
+    "calculatingText": "Beräknar din matchning..."
+  },
+  "results": {
+    "shareTitle": "Dela resultatet",
+    "imageButton": "Bild",
+    "copiedText": "Länk kopierad",
+    "restartCopy": "Vill du testa igen med andra frågor?",
+    "restartCta": "Gör testet igen",
+    "socialCardKicker": "Mitt resultat i Valkompass 2026",
+    "leadKicker": "Valguiden 2026",
+    "leadTitle": "Vill du få bättre koll inför valet?",
+    "leadCopy": "Få valguiden, uppdateringar i frågor du bryr dig om och smarta genomgångar direkt i din inkorg.",
+    "leadButton": "Följ valet",
+    "leadConsent": "Jag samtycker till att få e-post om valet och kan avregistrera mig när som helst."
+  }
+}

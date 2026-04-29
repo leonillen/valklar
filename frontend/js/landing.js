@@ -10,8 +10,8 @@ async function loadStats() {
     }
   } catch (e) {
     const el = document.getElementById('stat-total');
-    if (el) el.textContent = '1 200+';
+    if (el) el.textContent = window.Brand?.get('landing.fallbackCompletions', '1 200+') || '1 200+';
   }
 }
 
-loadStats();
+(window.Brand?.ready || Promise.resolve()).finally(loadStats);

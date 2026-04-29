@@ -2,6 +2,11 @@ import json
 import random
 import os
 
+try:
+    from calibration import get_priority_area
+except ImportError:
+    from backend.calibration import get_priority_area
+
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 
 def load_questions() -> list:
@@ -14,18 +19,19 @@ def load_parties() -> tuple:
     return {p['id']: p for p in data['parties']}, data['dimensions']
 
 def get_quiz_questions(n: int = 30, seed: int = None) -> list:
-    """Välj n frågor balanserat över alla ämnesområden."""
+    """Välj n frågor balanserat över prioriteringsområden."""
     all_questions = load_questions()
     rng = random.Random(seed)
 
     by_area = {}
     for q in all_questions:
-        by_area.setdefault(q['area'], []).append(q)
+        by_area.setdefault(get_priority_area(q), []).append(q)
 
     # Shuffle each area's pool
     areas = list(by_area.keys())
     for area in areas:
         rng.shuffle(by_area[area])
+    rng.shuffle(areas)
 
     # Round-robin over areas until we have n questions or exhaust all
     selected = []

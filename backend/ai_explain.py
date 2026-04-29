@@ -31,13 +31,22 @@ def generate_explanation(
         'miljo_tillvaxt': 'miljö vs tillväxt'
     }
 
+    dim_directions = {
+        'ekonomi': ('mot starkare välfärd och mer statlig styrning', 'mot fri marknad och lägre statlig styrning'),
+        'frihet_trygghet': ('mot mer trygghet och samhällskontroll', 'mot mer individuell frihet'),
+        'individ_kollektiv': ('mot kollektiva lösningar', 'mot individuellt ansvar och valfrihet'),
+        'progressiv_konservativ': ('mot traditionella och konservativa värden', 'mot progressiva samhällsförändringar'),
+        'miljo_tillvaxt': ('mot ekonomisk tillväxt', 'mot miljö- och klimathänsyn')
+    }
+
     dim_text = []
     for dim, score in user_dimensions.items():
         label = dim_labels.get(dim, dim)
+        low_direction, high_direction = dim_directions.get(dim, ('mot den lägre delen av skalan', 'mot den högre delen av skalan'))
         if score <= 3:
-            direction = "mot det kollektiva/konservativa/trygghets-orienterade hållet"
+            direction = low_direction
         elif score >= 7:
-            direction = "mot det individuella/progressiva/frihets-orienterade hållet"
+            direction = high_direction
         else:
             direction = "i mitten"
         dim_text.append(f"- {label}: {score}/10 ({direction})")

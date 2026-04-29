@@ -880,6 +880,446 @@
       "party_positions": {
         "S": 2, "M": 4, "SD": 5, "C": 3, "V": 1, "KD": 4, "L": 3, "MP": 2
       }
+    },
+    {
+      "id": "q081",
+      "text": "Sverige bör införa ett bidragstak så att det alltid lönar sig tydligt mer att arbeta än att leva på bidrag.",
+      "area": "Välfärd",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Bidragstak diskuteras som ett sätt att stärka arbetslinjen och minska långvarigt bidragsberoende. Kritiker menar att det kan öka barnfattigdom och slå mot hushåll med svagast ekonomi.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 4, "V": 1, "KD": 5, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q082",
+      "text": "Personer som saknar rätt att stanna i Sverige bör kunna placeras i återvändandecenter tills de lämnar landet.",
+      "area": "Migration",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Återvändandecenter lyfts för att öka kontrollen över personer med avlägsnandebeslut och minska risken att de avviker. Motargumenten gäller frihetsinskränkning, kostnader och rättssäkerhet.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 4, "MP": 1
+      }
+    },
+    {
+      "id": "q083",
+      "text": "Frivillig återvandring bör få betydligt högre ekonomiskt stöd för personer som inte etablerat sig i Sverige.",
+      "area": "Migration",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Höjt återvandringsstöd är en kontroversiell del av migrationsdebatten. Förespråkare ser det som ett frivilligt alternativ vid misslyckad etablering, medan kritiker menar att det riskerar att signalera att vissa grupper inte hör hemma här.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 1, "V": 1, "KD": 4, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q084",
+      "text": "Medborgarskap bör kunna återkallas för personer med dubbelt medborgarskap som begår mycket allvarliga brott.",
+      "area": "Migration",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Återkallat medborgarskap väcker frågor om terrorism, grov kriminalitet, likhet inför lagen och risken för olika rättigheter beroende på ursprung eller dubbelt medborgarskap.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q085",
+      "text": "Sverige bör införa språk- och samhällskunskapsprov som krav för medborgarskap.",
+      "area": "Integration",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Kunskapskrav för medborgarskap ska enligt förespråkare stärka integration och gemensamma spelregler. Kritiker varnar för att människor som redan lever här länge kan hamna i permanent utanförskap.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q086",
+      "text": "Anhöriginvandring bör kräva högre egen försörjning och större bostad än i dag.",
+      "area": "Migration",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Försörjningskrav vid anhöriginvandring kopplar migrationspolitik till integration och offentliga kostnader. Kritiker menar att hårda krav splittrar familjer och slår särskilt mot låginkomsttagare.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q087",
+      "text": "Utländska studenter som tar examen i bristyrken bör få enklare väg till arbetstillstånd i Sverige.",
+      "area": "Migration",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Frågan handlar om att behålla kompetens som redan utbildats i Sverige. Den ställs mot en mer restriktiv migrationslinje och mot risken att studievisum används som bakväg till arbetsmarknaden.",
+      "party_positions": {
+        "S": 4, "M": 4, "SD": 2, "C": 5, "V": 3, "KD": 4, "L": 5, "MP": 4
+      }
+    },
+    {
+      "id": "q088",
+      "text": "Asylansökningar bör i större utsträckning hanteras utanför EU:s gränser innan personer reser hit.",
+      "area": "Migration",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Externa asylprocesser föreslås för att minska farliga resor och irreguljär migration. Kritiken gäller rättssäkerhet, ansvarsförskjutning och om asylrätten i praktiken försvagas.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q089",
+      "text": "Kommuner bör kunna säga nej till att ta emot fler nyanlända om bostäder och skolplatser saknas.",
+      "area": "Migration",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Mottagande av nyanlända påverkar bostadsmarknad, skola och kommunal ekonomi. Mer kommunalt självbestämmande kan ge bättre lokal förankring men riskerar att vältra över ansvar på andra kommuner.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 3, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q090",
+      "text": "Personer som aktivt undanhåller sig utvisning bör förlora rätten till ekonomiskt stöd från samhället.",
+      "area": "Migration",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Frågan gäller hur staten ska hantera personer med lagakraftvunna avlägsnandebeslut. Förespråkare betonar respekt för beslut, kritiker varnar för ökad utsatthet och skuggsamhällen.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 4, "MP": 1
+      }
+    },
+    {
+      "id": "q091",
+      "text": "Socialtjänsten bör lättare kunna omhänderta unga som dras in i gängmiljöer innan de döms för brott.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Tidiga tvångsinsatser kan bryta rekrytering till gäng men innebär stora ingrepp i familjeliv och barns frihet. Frågan väger förebyggande trygghet mot rättssäkerhet.",
+      "party_positions": {
+        "S": 4, "M": 5, "SD": 5, "C": 3, "V": 2, "KD": 5, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q092",
+      "text": "Militären bör kunna stödja polisen operativt vid extrema våldsvågor och terrorhot.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Militärt stöd till polisen kan ge resurser vid allvarliga hot men väcker principiella frågor om gränsen mellan polisiär ordning och militär makt i samhället.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q093",
+      "text": "Hemlig dataavläsning bör få användas mer förebyggande mot personer i gängmiljö.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Hemlig dataavläsning ger myndigheter tillgång till digital kommunikation och kan avslöja grova brott. Samtidigt är det ett starkt integritetsintrång, särskilt när det används före brott har begåtts.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 2, "V": 1, "KD": 5, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q094",
+      "text": "Föräldrar bör kunna hållas ekonomiskt ansvariga när deras barn begår upprepade grova brott.",
+      "area": "Lag & Ordning",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Föräldraansvar i kriminalpolitiken ska enligt förespråkare öka vuxennärvaro och ansvar. Kritiker menar att det riskerar att straffa redan utsatta familjer och inte träffar gängens drivkrafter.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q095",
+      "text": "Fängelsestraff bör kunna avtjänas i andra länder om svenska fängelser är överfulla.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Fängelseplatser utomlands diskuteras som lösning på kapacitetsbrist. Frågan rör kostnader, kontroll över villkor, rehabilitering och principen om svensk straffverkställighet.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q096",
+      "text": "Livstidsstraff bör användas oftare vid mord kopplade till organiserad brottslighet.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Hårdare straff för gängmord har starkt stöd i trygghetsdebatten. Motargumentet är att straffnivåer inte ensamma stoppar rekrytering och att rättssystemet måste värna proportionalitet.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q097",
+      "text": "Narkotikabruk bör avkriminaliseras för att fler ska våga söka vård.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Avkriminalisering av eget bruk är en av de mest laddade narkotikafrågorna. Förespråkare betonar folkhälsa och minskad dödlighet, medan motståndare oroar sig för normalisering och ökat bruk.",
+      "party_positions": {
+        "S": 2, "M": 2, "SD": 1, "C": 4, "V": 4, "KD": 1, "L": 4, "MP": 5
+      }
+    },
+    {
+      "id": "q098",
+      "text": "Kommuner bör kunna införa lokala utegångsförbud för unga vid akuta gängkonflikter.",
+      "area": "Lag & Ordning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Utegångsförbud kan ses som ett sätt att skydda unga och minska våld vid akuta konflikter. Kritiken gäller kollektiv bestraffning, frihetsinskränkning och svårigheter att tillämpa rättvist.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q099",
+      "text": "Höga marginalskatter gör att för få utbildar sig länge och tar kvalificerade jobb.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Marginalskatter påverkar avkastningen på utbildning, karriär och extra arbete. Frågan står mellan ekonomiska drivkrafter och finansiering av gemensam välfärd.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 3, "C": 5, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q100",
+      "text": "Staten bör prioritera amorteringslättnader och sänkta boendekostnader framför nya bidrag.",
+      "area": "Bostäder",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Höga räntor och boendekostnader påverkar hushållens ekonomi. Amorteringslättnader kan stärka kassaflödet men riskerar att öka skuldsättning och bostadspriser.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 4, "C": 4, "V": 1, "KD": 4, "L": 3, "MP": 2
+      }
+    },
+    {
+      "id": "q101",
+      "text": "Sverige bör sänka arbetsgivaravgifterna för unga och nyanlända för att få fler i arbete.",
+      "area": "Arbetsmarknad",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Lägre kostnad för att anställa kan ge fler inträdesjobb men kostar staten stora intäkter. Kritiker menar att subventioner ofta går till jobb som ändå skulle ha skapats.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 3, "C": 5, "V": 1, "KD": 4, "L": 5, "MP": 3
+      }
+    },
+    {
+      "id": "q102",
+      "text": "Kapitalskatter bör höjas för att finansiera välfärd och försvar.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Kapitalskatter berör aktier, utdelningar, fastigheter och sparande. Högre skatt kan minska klyftor och finansiera staten men riskerar att minska investeringar och kapital i Sverige.",
+      "party_positions": {
+        "S": 4, "M": 1, "SD": 2, "C": 1, "V": 5, "KD": 1, "L": 1, "MP": 4
+      }
+    },
+    {
+      "id": "q103",
+      "text": "Staten bör minska biståndet för att finansiera polis, försvar och välfärd i Sverige.",
+      "area": "EU & Utrikespolitik",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Biståndsbudgeten ställs ofta mot inhemska prioriteringar. Förespråkare för minskat bistånd betonar svenska kärnuppgifter, medan kritiker pekar på globalt ansvar, säkerhet och fattigdomsbekämpning.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 3, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q104",
+      "text": "Ett nationellt skuldankare bör prioriteras även om det bromsar stora offentliga investeringar.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Finanspolitiska regler håller statsskulden låg och skapar förtroende. Samtidigt kan hårda regler begränsa investeringar i infrastruktur, försvar, klimat och energisystem.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 4, "C": 5, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q105",
+      "text": "Banker bör beskattas hårdare när räntenettot ökar kraftigt.",
+      "area": "Ekonomi",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Bankskatter aktualiseras när banker gör stora vinster samtidigt som hushåll pressas av räntor. Kritiker menar att högre skatt kan föras vidare till kunder och försämra kreditmarknaden.",
+      "party_positions": {
+        "S": 4, "M": 1, "SD": 3, "C": 1, "V": 5, "KD": 2, "L": 1, "MP": 4
+      }
+    },
+    {
+      "id": "q106",
+      "text": "Krav på kollektivavtalsliknande villkor bör gälla för företag som får stora offentliga upphandlingar.",
+      "area": "Arbetsmarknad",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Villkor i offentlig upphandling kan motverka lönedumpning och oseriösa aktörer. Samtidigt kan kraven öka kostnader och göra det svårare för mindre företag att konkurrera.",
+      "party_positions": {
+        "S": 5, "M": 2, "SD": 3, "C": 2, "V": 5, "KD": 3, "L": 2, "MP": 4
+      }
+    },
+    {
+      "id": "q107",
+      "text": "Sverige bör tillåta fler enkla låglönejobb även om det ökar löneskillnaderna.",
+      "area": "Arbetsmarknad",
+      "dimension": "ekonomi",
+      "weight": 1.0,
+      "info": "Enklare jobb med lägre löner föreslås för att få in fler utan stark utbildning på arbetsmarknaden. Motståndare menar att det skapar working poor och pressar löner nedåt.",
+      "party_positions": {
+        "S": 1, "M": 5, "SD": 3, "C": 5, "V": 1, "KD": 4, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q108",
+      "text": "Skattepengar bör inte gå till religiösa samfund som motverkar jämställdhet eller demokratiska värderingar.",
+      "area": "Demokrati & Media",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Stöd till trossamfund berör religionsfrihet, integration och demokrativillkor. Frågan blir kontroversiell när staten ska bedöma vilka värderingar som är förenliga med offentligt stöd.",
+      "party_positions": {
+        "S": 4, "M": 4, "SD": 5, "C": 3, "V": 4, "KD": 2, "L": 5, "MP": 3
+      }
+    },
+    {
+      "id": "q109",
+      "text": "Public service bör granskas hårdare politiskt för att säkerställa opartiskhet.",
+      "area": "Demokrati & Media",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Debatten om public service handlar om förtroende, oberoende och politisk slagsida. Hårdare politisk kontroll kan öka ansvarsutkrävandet men riskerar att försvaga mediernas oberoende.",
+      "party_positions": {
+        "S": 1, "M": 3, "SD": 5, "C": 2, "V": 1, "KD": 3, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q110",
+      "text": "Demonstrationer som innebär stor säkerhetsrisk bör lättare kunna nekas tillstånd.",
+      "area": "Demokrati & Media",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Tillståndsprövning för demonstrationer balanserar yttrandefrihet och ordning. Strängare regler kan minska våldsrisk men också ge staten större makt över kontroversiella åsiktsyttringar.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 4, "C": 2, "V": 1, "KD": 3, "L": 2, "MP": 1
+      }
+    },
+    {
+      "id": "q111",
+      "text": "Myndigheter bör inte använda skattepengar till normkritiska eller identitetspolitiska utbildningar.",
+      "area": "Kultur",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Utbildningar om normer, diskriminering och inkludering väcker debatt om arbetsmiljö, ideologi och offentlig neutralitet. Frågan fångar konfliktlinjen mellan kulturkritik och jämlikhetsarbete.",
+      "party_positions": {
+        "S": 2, "M": 4, "SD": 5, "C": 3, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
+    },
+    {
+      "id": "q112",
+      "text": "Skolan bör lägga större vikt vid svensk historia, kultur och gemensamma samhällsnormer.",
+      "area": "Utbildning",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Mer fokus på gemensam kultur och historia föreslås som integrations- och kunskapsverktyg. Kritiker menar att undervisningen riskerar att bli nationalistisk eller tränga undan pluralism.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 3, "V": 2, "KD": 5, "L": 4, "MP": 2
+      }
+    },
+    {
+      "id": "q113",
+      "text": "Skolor i utsatta områden bör kunna ha längre skoldagar och obligatorisk lovskola.",
+      "area": "Utbildning",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Mer undervisningstid kan minska kunskapsgap och stärka integration. Samtidigt väcker riktade krav frågor om likabehandling, resurser och barns fritid.",
+      "party_positions": {
+        "S": 4, "M": 4, "SD": 5, "C": 3, "V": 3, "KD": 4, "L": 5, "MP": 3
+      }
+    },
+    {
+      "id": "q114",
+      "text": "Betyg och ordningsomdömen bör införas tidigare i grundskolan.",
+      "area": "Utbildning",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Tidigare betyg och ordningsomdömen ska enligt förespråkare ge tydligare ansvar och studiero. Kritiker menar att det ökar stress och inte säkert höjer kunskapsresultaten.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 5, "MP": 1
+      }
+    },
+    {
+      "id": "q115",
+      "text": "Privata vårdgivare bör få större ansvar om de kan korta vårdköerna.",
+      "area": "Hälsa",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Privata vårdgivare kan öka kapacitet och valfrihet men väcker frågor om styrning, personalförsörjning och jämlik tillgång till vård.",
+      "party_positions": {
+        "S": 2, "M": 5, "SD": 3, "C": 5, "V": 1, "KD": 5, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q116",
+      "text": "Psykiatrisk tvångsvård bör kunna användas tidigare för personer som bedöms vara farliga för sig själva eller andra.",
+      "area": "Hälsa",
+      "dimension": "frihet_trygghet",
+      "weight": 1.0,
+      "info": "Tidigare tvångsvård kan förebygga självmord och våld men är ett starkt ingrepp i individens frihet. Frågan berör vårdkapacitet, rättssäkerhet och samhällets skyddsansvar.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 4, "C": 2, "V": 2, "KD": 4, "L": 3, "MP": 2
+      }
+    },
+    {
+      "id": "q117",
+      "text": "Familjer bör få större ekonomiskt stöd om en förälder vill vara hemma längre med små barn.",
+      "area": "Familj",
+      "dimension": "progressiv_konservativ",
+      "weight": 1.0,
+      "info": "Vårdnadsbidrag och längre hemmatid lyfts som valfrihet för familjer. Kritiker menar att det kan minska jämställdhet, försvaga kvinnors arbetsmarknad och försena barns språkutveckling.",
+      "party_positions": {
+        "S": 1, "M": 3, "SD": 4, "C": 3, "V": 1, "KD": 5, "L": 2, "MP": 2
+      }
+    },
+    {
+      "id": "q118",
+      "text": "Barnfamiljer med långvarigt bidragsberoende bör möta tydligare krav på närvaro i förskola, skola och samhällsintroduktion.",
+      "area": "Integration",
+      "dimension": "individ_kollektiv",
+      "weight": 1.0,
+      "info": "Krav kopplade till familjers bidrag och barns skolnärvaro diskuteras som väg ur utanförskap. Kritiker varnar för hårda sanktioner mot barn och familjer med komplexa problem.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 5, "MP": 2
+      }
+    },
+    {
+      "id": "q119",
+      "text": "Sverige bör bygga ut kärnkraft snabbare även om staten behöver ta en stor ekonomisk risk.",
+      "area": "Energi",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Ny kärnkraft kräver stora garantier och långsiktiga villkor. Frågan ställer planerbar fossilfri el och industrins behov mot kostnadsrisker och alternativ som vind, sol, nät och lagring.",
+      "party_positions": {
+        "S": 3, "M": 5, "SD": 5, "C": 3, "V": 1, "KD": 5, "L": 5, "MP": 1
+      }
+    },
+    {
+      "id": "q120",
+      "text": "Klimatpolitiken bör bromsas om den gör drivmedel, el och mat märkbart dyrare för vanliga hushåll.",
+      "area": "Miljö & Klimat",
+      "dimension": "miljo_tillvaxt",
+      "weight": 1.0,
+      "info": "Klimatomställningens kostnader är en central konflikt i politiken. Förespråkare för en långsammare takt betonar hushållens ekonomi, medan kritiker varnar för högre framtida klimatkostnader.",
+      "party_positions": {
+        "S": 3, "M": 4, "SD": 5, "C": 2, "V": 1, "KD": 4, "L": 3, "MP": 1
+      }
     }
   ]
 }

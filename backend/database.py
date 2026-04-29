@@ -25,6 +25,20 @@ def init_db():
             key TEXT PRIMARY KEY,
             value INTEGER DEFAULT 0
         );
+        CREATE TABLE IF NOT EXISTS lead_signups (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            email TEXT NOT NULL,
+            source TEXT NOT NULL DEFAULT 'results',
+            interests_json TEXT NOT NULL DEFAULT '[]',
+            top_party TEXT,
+            match_score REAL,
+            priority_areas_json TEXT NOT NULL DEFAULT '[]',
+            consent_version TEXT NOT NULL,
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL
+        );
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_lead_signups_email_source
+            ON lead_signups (email, source);
         INSERT OR IGNORE INTO stats (key, value) VALUES ('total_completions', 0);
     """)
     conn.commit()
@@ -39,6 +53,51 @@ def record_completion(session_id: str, answers: dict, top_party: str, match_scor
     conn.execute("UPDATE stats SET value = value + 1 WHERE key = 'total_completions'")
     conn.commit()
     conn.close()
+
+def record_lead_signup(
+    email: str,
+    source: str,
+    interests: list,
+    top_party: str = None,
+    match_score: float = None,
+    priority_areas: list = None,
+    consent_version: str = 'newsletter-2026-v1'
+) -> bool:
+    now = datetime.utcnow().isoformat()
+    conn = get_db()
+    existing = conn.execute(
+        "SELECT id FROM lead_signups WHERE email=? AND source=?", (email, source)
+    ).fetchone()
+    conn.execute(
+        """
+        INSERT INTO lead_signups (
+            email, source, interests_json, top_party, match_score,
+            priority_areas_json, consent_version, created_at, updated_at
+        )
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(email, source) DO UPDATE SET
+            interests_json=excluded.interests_json,
+            top_party=excluded.top_party,
+            match_score=excluded.match_score,
+            priority_areas_json=excluded.priority_areas_json,
+            consent_version=excluded.consent_version,
+            updated_at=excluded.updated_at
+        """,
+        (
+            email,
+            source,
+            json.dumps(interests or []),
+            top_party,
+            match_score,
+            json.dumps(priority_areas or []),
+            consent_version,
+            now,
+            now
+        )
+    )
+    conn.commit()
+    conn.close()
+    return existing is None
 
 def get_total_completions() -> int:
     conn = get_db()

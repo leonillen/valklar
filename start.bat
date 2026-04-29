@@ -26,7 +26,7 @@ start "Valkompass Frontend" cmd /k "chcp 65001 >nul && cd /d "%FRONTDIR%" && pyt
 :: Vanta och oppna webblesaren
 timeout /t 2 /nobreak >nul
 echo  Oppnar webblesare...
-start http://localhost:3000
+start http://localhost:3000/index.html?v=20260428-party-colors
 
 echo.
 echo  Backend:  http://localhost:5050

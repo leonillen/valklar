@@ -1,4 +1,5 @@
 const API = 'http://localhost:5050/api';
+const HOME_URL = 'index.html?v=20260428-party-colors';
 const ANSWER_OPTIONS = [
   { label: 'H\u00e5ller inte alls med', tone: 'strong-disagree' },
   { label: 'H\u00e5ller delvis inte med', tone: 'disagree' },
@@ -15,7 +16,9 @@ const PRIORITY_AREAS = [
   { id: 'V\u00e4lf\u00e4rd', label: 'V\u00e4lf\u00e4rd', description: 'V\u00e5rd, omsorg och trygghetssystem.' },
   { id: 'Milj\u00f6 & Klimat', label: 'Milj\u00f6 & klimat', description: 'Klimatpolitik, natur och tillv\u00e4xt.' },
   { id: 'Lag & Ordning', label: 'Lag & ordning', description: 'Brott, straff och polis.' },
-  { id: 'Energi', label: 'Energi', description: 'El, k\u00e4rnkraft och energipriser.' }
+  { id: 'Energi', label: 'Energi', description: 'El, k\u00e4rnkraft och energipriser.' },
+  { id: 'F\u00f6rsvar & utrikespolitik', label: 'F\u00f6rsvar & utrikespolitik', description: 'F\u00f6rsvar, NATO, EU och omv\u00e4rlden.' },
+  { id: 'Demokrati & r\u00e4ttigheter', label: 'Demokrati & r\u00e4ttigheter', description: 'Medier, kultur och sociala friheter.' }
 ];
 
 let questions = [];
@@ -23,8 +26,37 @@ let answers = {};
 let priorityAreas = [];
 let currentIndex = 0;
 let sessionSeed = 0;
+let transitionTimer = null;
+let autoAdvanceTimer = null;
+
+function transitionTo(nextEl) {
+  if (transitionTimer) {
+    clearTimeout(transitionTimer);
+    transitionTimer = null;
+    document.querySelectorAll('.question-area.leaving').forEach(el => el.classList.remove('active', 'leaving'));
+  }
+  const current = document.querySelector('.question-area.active');
+  if (current && current !== nextEl) {
+    current.classList.add('leaving');
+    transitionTimer = setTimeout(() => {
+      transitionTimer = null;
+      current.classList.remove('active', 'leaving');
+      nextEl.classList.add('active');
+    }, 200);
+  } else {
+    document.querySelectorAll('.question-area').forEach(el => el.classList.remove('active', 'leaving'));
+    nextEl.classList.add('active');
+  }
+}
 
 async function init() {
+  await (window.Brand?.ready || Promise.resolve());
+
+  const homeLink = document.getElementById('home-link');
+  if (homeLink) homeLink.href = HOME_URL;
+  const loadingState = document.getElementById('loading-state');
+  if (loadingState) loadingState.textContent = window.Brand?.get('quiz.loadingText', 'Laddar frågor...') || 'Laddar frågor...';
+
   sessionSeed = Date.now() % 100000;
   try {
     const res = await fetch(`${API}/questions?n=30&seed=${sessionSeed}`);
@@ -39,7 +71,7 @@ async function init() {
     renderAll();
     showPriorityIntro();
   } catch (e) {
-    document.getElementById('loading-state').textContent = 'Kunde inte ladda frågor. Kontrollera att servern körs.';
+    document.getElementById('loading-state').textContent = window.Brand?.get('quiz.loadingError', 'Kunde inte ladda frågor. Kontrollera att servern körs.') || 'Kunde inte ladda frågor. Kontrollera att servern körs.';
   }
 }
 
@@ -67,15 +99,17 @@ function renderAll() {
     </div>
   `;
 
-  container.innerHTML = priorityIntro + questions.map((q, i) => `
+  container.innerHTML = priorityIntro + questions.map((q, i) => {
+    const questionIdArg = JSON.stringify(String(q.id || '')).replace(/</g, '\\u003C');
+    return `
     <div class="question-area" id="q-${i}">
       <div class="question-card">
         <div class="question-meta">
-          <span class="area-badge">${q.area}</span>
+          <span class="area-badge">${escapeHtml(q.area)}</span>
           <span class="question-number">Fråga ${i + 1} av ${questions.length}</span>
         </div>
-        <h2 class="question-text">${q.text}</h2>
-        <button class="info-toggle" onclick="toggleInfo(${i}, '${q.id}')">
+        <h2 class="question-text">${escapeHtml(q.text)}</h2>
+        <button class="info-toggle" onclick='toggleInfo(${i}, ${questionIdArg})'>
           <span>ℹ</span> Fördjupning om frågan
         </button>
         <div class="question-info-box" id="info-${i}">
@@ -94,13 +128,13 @@ function renderAll() {
         </div>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
 }
 
 function showPriorityIntro() {
-  document.querySelectorAll('.question-area').forEach(el => el.classList.remove('active'));
   const el = document.getElementById('priority-step');
-  if (el) el.classList.add('active');
+  if (el) transitionTo(el);
   currentIndex = -1;
   updateProgress();
   updateNavButtons();
@@ -109,9 +143,8 @@ function showPriorityIntro() {
 }
 
 function showQuestion(index) {
-  document.querySelectorAll('.question-area').forEach(el => el.classList.remove('active'));
   const el = document.getElementById(`q-${index}`);
-  if (el) el.classList.add('active');
+  if (el) transitionTo(el);
   const skip = document.querySelector('.skip-link');
   if (skip) skip.style.display = '';
   currentIndex = index;
@@ -185,10 +218,13 @@ function selectAnswer(index, value) {
   document.querySelectorAll(`[id^="opt-${index}-"]`).forEach(el => el.classList.remove('selected'));
   document.getElementById(`opt-${index}-${value}`).classList.add('selected');
   updateProgress();
-  setTimeout(() => nextQuestion(), 350);
+  clearTimeout(autoAdvanceTimer);
+  autoAdvanceTimer = setTimeout(() => nextQuestion(), 350);
 }
 
 function nextQuestion() {
+  clearTimeout(autoAdvanceTimer);
+  autoAdvanceTimer = null;
   if (currentIndex < 0) {
     showQuestion(0);
     return;
@@ -202,6 +238,8 @@ function nextQuestion() {
 }
 
 function prevQuestion() {
+  clearTimeout(autoAdvanceTimer);
+  autoAdvanceTimer = null;
   if (currentIndex === 0) {
     showPriorityIntro();
     return;
@@ -250,11 +288,12 @@ async function toggleInfo(index, questionId) {
 async function submitAnswers() {
   const answeredCount = Object.keys(answers).length;
   if (answeredCount < Math.floor(questions.length * 0.5)) {
-    alert(`Du har besvarat ${answeredCount} av ${questions.length} frågor. Svara på fler för ett bättre resultat.`);
+    showQuizNotice(`Du har besvarat ${answeredCount} av ${questions.length} frågor. Svara på fler för ett bättre resultat.`);
     return;
   }
 
-  document.getElementById('nav-area').innerHTML = '<div style="text-align:center;padding:40px 0;color:var(--text-muted);">Beräknar din matchning...</div>';
+  const calculatingText = escapeHtml(window.Brand?.get('quiz.calculatingText', 'Beräknar din matchning...') || 'Beräknar din matchning...');
+  document.getElementById('nav-area').innerHTML = `<div class="loading-state loading-state-compact">${calculatingText}</div>`;
 
   try {
     const res = await fetch(`${API}/submit`, {
@@ -273,11 +312,29 @@ async function submitAnswers() {
     document.getElementById('nav-area').innerHTML = `
       <div style="text-align:center;color:red;margin-bottom:16px;">${escapeHtml(message)}</div>
       <div class="nav-buttons">
-        <button class="btn btn-ghost" onclick="showQuestion(currentIndex)">Tillbaka</button>
+        <button class="btn btn-ghost" onclick="showQuestion(currentIndex - 1 >= 0 ? currentIndex - 1 : 0)">← Föregående</button>
         <button class="btn btn-primary" onclick="submitAnswers()">Försök igen</button>
       </div>
     `;
   }
+}
+
+function showQuizNotice(message) {
+  const navArea = document.getElementById('nav-area');
+  if (!navArea) return;
+  let notice = document.getElementById('quiz-warning');
+  if (!notice) {
+    notice = document.createElement('div');
+    notice.id = 'quiz-warning';
+    notice.className = 'quiz-warning';
+    navArea.prepend(notice);
+  }
+  notice.textContent = message;
+  notice.classList.add('is-visible');
+  clearTimeout(showQuizNotice.timer);
+  showQuizNotice.timer = setTimeout(() => {
+    notice.classList.remove('is-visible');
+  }, 3200);
 }
 
 init();

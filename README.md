@@ -63,6 +63,7 @@ valkompass/
 | `/api/questions` | GET | Hämta frågor (`?n=30&seed=42`) |
 | `/api/submit` | POST | Skicka svar, få matchningsresultat |
 | `/api/explain` | POST | AI-förklaring av matchning (kräver GROQ_API_KEY) |
+| `/api/leads` | POST | Spara frivillig nyhetsbrevsanmälan från resultatsidan |
 | `/api/question-info` | POST | Fördjupningsinformation om en fråga |
 
 ### Exempel – submit
@@ -94,12 +95,17 @@ Varje användare placeras på 5 dimensioner (1–10):
 
 För att anpassa till ett medieföretag:
 
-1. **Byt API-URL** i `js/landing.js`, `js/quiz.js`, `js/results.js`:
+1. **Anpassa kundprofilen** i `frontend/customer.config.json`:
+   - `brand` styr produktnamn, logotyp, valetikett, partnertext och marknadstext
+   - `theme` styr accent, bakgrund, text och blockfärger
+   - `landing`, `quiz` och `results` styr sidcopy, CTA:er och delningscopy
+
+2. **Byt API-URL** i `js/landing.js`, `js/quiz.js`, `js/results.js`:
    ```javascript
    const API = 'https://ditt-domännamn.se/api';
    ```
 
-2. **Anpassa färger och typsnitt** via CSS-variabler i `css/base.css`:
+3. **Finjustera designsystemet** vid behov via CSS-variabler i `css/base.css`:
    ```css
    :root {
      --accent: #din-färg;
@@ -107,7 +113,8 @@ För att anpassa till ett medieföretag:
    }
    ```
 
-3. **Lägg till logotyp** i index.html hero-sektionen.
+4. **Resultatbild** skapas client-side på resultatsidan via knappen `Bild`.
+   Den använder top match, topp 3 partier, dimensionsprofil och kundens färger från `customer.config.json`.
 
 ---
 
