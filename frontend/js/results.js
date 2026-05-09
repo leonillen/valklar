@@ -1,14 +1,54 @@
-const API = 'http://localhost:5050/api';
+const API = '/api';
 
 const PARTY_META = {
-  S: { name: 'Socialdemokraterna', color: '#D83B36', tagline: 'Trygghet, j\u00e4mlikhet och en stark v\u00e4lf\u00e4rd.' },
-  M: { name: 'Moderaterna', color: '#3C4E82', tagline: 'L\u00e4gre skatter, mer frihet och ett tryggare Sverige.' },
-  SD: { name: 'Sverigedemokraterna', color: '#DCC715', tagline: 'Sverige och svenska intressen f\u00f6rst.' },
-  C: { name: 'Centerpartiet', color: '#005A44', tagline: 'Frihet, f\u00f6retagande och en levande landsbygd.' },
-  V: { name: 'V\u00e4nsterpartiet', color: '#9E2B27', tagline: 'J\u00e4mlikhet, feminism och ett starkare samh\u00e4lle.' },
-  KD: { name: 'Kristdemokraterna', color: '#557CB1', tagline: 'Familjens och gemenskapens parti.' },
-  L: { name: 'Liberalerna', color: '#87BFE3', tagline: 'Frihet, bildning och ett \u00f6ppet samh\u00e4lle.' },
-  MP: { name: 'Milj\u00f6partiet', color: '#2FAA35', tagline: 'F\u00f6r klimatet, r\u00e4ttvisan och framtiden.' }
+  S: {
+    name: 'Socialdemokraterna',
+    color: '#D83B36',
+    tagline: 'Trygghet, j\u00e4mlikhet och en stark v\u00e4lf\u00e4rd.',
+    description: 'Sveriges historiskt dominerande parti. F\u00f6respr\u00e5kar stark v\u00e4lf\u00e4rd, aktiv arbetsmarknadspolitik och kollektiva l\u00f6sningar. Grundade folkhemmet. Centrum-v\u00e4nster p\u00e5 ekonomi, relativt konservativa p\u00e5 ordningsfr\u00e5gor.'
+  },
+  M: {
+    name: 'Moderaterna',
+    color: '#3C4E82',
+    tagline: 'L\u00e4gre skatter, mer frihet och ett tryggare Sverige.',
+    description: 'Det stora h\u00f6gerpartiet. F\u00f6respr\u00e5kar l\u00e4gre skatter, privatiseringar och marknadsl\u00f6sningar. H\u00e5rd linje mot kriminalitet. H\u00f6ger p\u00e5 ekonomi, konservativa p\u00e5 lag & ordning, relativt liberala socialt.'
+  },
+  SD: {
+    name: 'Sverigedemokraterna',
+    color: '#DCC715',
+    tagline: 'Sverige och svenska intressen f\u00f6rst.',
+    description: 'Nationalistiskt parti med fokus p\u00e5 restriktiv invandringspolitik och bevarandet av svensk kultur. H\u00f6ger p\u00e5 migration och kulturv\u00e4rden, mer v\u00e4nster p\u00e5 v\u00e4lf\u00e4rd. Tredje st\u00f6rsta parti i riksdagen.'
+  },
+  C: {
+    name: 'Centerpartiet',
+    color: '#005A44',
+    tagline: 'Frihet, f\u00f6retagande och en levande landsbygd.',
+    description: 'Liberalt parti med r\u00f6tter i landsbygdsr\u00f6relsen. F\u00f6respr\u00e5kar frihandel, avregleringar och \u00f6ppen invandring. Det mest utpr\u00e4glat liberala partiet i riksdagen - h\u00f6ger p\u00e5 ekonomi, v\u00e4nster p\u00e5 frihetsfr\u00e5gor.'
+  },
+  V: {
+    name: 'V\u00e4nsterpartiet',
+    color: '#9E2B27',
+    tagline: 'J\u00e4mlikhet, feminism och ett starkare samh\u00e4lle.',
+    description: 'Det mest v\u00e4nsterorienterade riksdagspartiet. Vill \u00f6ka skatter p\u00e5 kapital, st\u00e4rka fackf\u00f6reningar och minska klyftor. Progressiva p\u00e5 sociala fr\u00e5gor, kritiska till NATO och EU.'
+  },
+  KD: {
+    name: 'Kristdemokraterna',
+    color: '#557CB1',
+    tagline: 'Familjens och gemenskapens parti.',
+    description: 'Konservativt parti med kristen v\u00e4rdegrund. Starkt fokus p\u00e5 familj, valfrihet i v\u00e4lf\u00e4rden och etikfr\u00e5gor. Ekonomiskt h\u00f6ger, socialt konservativa, m\u00e5ttliga p\u00e5 migration.'
+  },
+  L: {
+    name: 'Liberalerna',
+    color: '#87BFE3',
+    tagline: 'Frihet, bildning och ett \u00f6ppet samh\u00e4lle.',
+    description: 'Klassiskt liberalt parti. Prioriterar utbildning, r\u00e4ttss\u00e4kerhet och EU-samarbete. Ekonomiskt center-h\u00f6ger, socialt liberala. Har varierat i samarbetskonstellationer.'
+  },
+  MP: {
+    name: 'Milj\u00f6partiet',
+    color: '#2FAA35',
+    tagline: 'F\u00f6r klimatet, r\u00e4ttvisan och framtiden.',
+    description: 'Gr\u00f6nt parti med fokus p\u00e5 klimatomst\u00e4llning, biologisk m\u00e5ngfald och social r\u00e4ttvisa. V\u00e4nster p\u00e5 f\u00f6rdelning, progressiva p\u00e5 invandring och j\u00e4mlikhet, men definieras prim\u00e4rt av milj\u00f6fr\u00e5gan.'
+  }
 };
 
 const PARTY_LOGOS = {
@@ -84,7 +124,7 @@ function hydrateSharedResult(value) {
         color: meta.color,
         score: sanitizeScore(item.score),
         tagline: meta.tagline,
-        description: ''
+        description: meta.description
       };
     })
     .filter(Boolean);
@@ -350,7 +390,7 @@ function renderAllParties(ranking) {
         <span class="party-result-score">${score}%</span>
         <span class="party-result-caret" aria-hidden="true"></span>
       </button>
-      <div class="party-result-panel" id="party-panel-${partyId}" role="region" aria-labelledby="party-button-${partyId}">
+      <div class="party-result-panel" id="party-panel-${partyId}" role="region" aria-labelledby="party-button-${partyId}" aria-hidden="true">
         <div class="party-result-panel-inner">
           <p class="party-result-tagline">${escapeHtml(p.tagline)}</p>
           <p class="party-result-desc">${escapeHtml(p.description)}</p>
@@ -369,10 +409,12 @@ function renderAllParties(ranking) {
 function togglePartyDetails(partyId) {
   const item = document.getElementById(`party-item-${partyId}`);
   const button = document.getElementById(`party-button-${partyId}`);
-  if (!item || !button) return;
+  const panel = document.getElementById(`party-panel-${partyId}`);
+  if (!item || !button || !panel) return;
 
   const isOpen = item.classList.toggle('is-open');
   button.setAttribute('aria-expanded', String(isOpen));
+  panel.setAttribute('aria-hidden', String(!isOpen));
 }
 
 function clamp(value, min, max) {
@@ -903,12 +945,21 @@ async function shareResultImage() {
   try {
     const blob = await createResultImageBlob();
     const file = new File([blob], 'valkompass-resultat.png', { type: 'image/png' });
-    if (navigator.canShare?.({ files: [file] })) {
-      await navigator.share({
+    const canNativeShare = navigator.share && navigator.canShare?.({ files: [file] });
+    if (canNativeShare) {
+      const sharePromise = navigator.share({
         files: [file],
         title: `${window.Brand?.get('brand.electionLabel', 'Valkompass 2026')} - mitt resultat`,
         text: `Jag matchar med ${result.ranking[0].name} (${result.ranking[0].score}%).`
       });
+      const timeoutPromise = new Promise(resolve => {
+        setTimeout(() => resolve('timeout'), 12000);
+      });
+      const shareResult = await Promise.race([sharePromise.then(() => 'shared'), timeoutPromise]);
+      if (shareResult === 'timeout') {
+        downloadBlob(blob, 'valkompass-resultat.png');
+        showToast('Resultatbild sparad');
+      }
     } else {
       downloadBlob(blob, 'valkompass-resultat.png');
       showToast('Resultatbild sparad');

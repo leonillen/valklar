@@ -1,4 +1,4 @@
-const API = 'http://localhost:5050/api';
+const API = '/api';
 
 async function loadStats() {
   try {

@@ -2,7 +2,7 @@ import sys, os
 sys.stdout.reconfigure(encoding='utf-8')
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from dotenv import load_dotenv
 import uuid
@@ -16,8 +16,24 @@ from scoring import calculate_average_voter_dimensions, calculate_match
 from database import init_db, record_completion, record_lead_signup, get_total_completions, get_party_distribution
 from ai_explain import generate_explanation, generate_question_info
 
-app = Flask(__name__)
-CORS(app, origins=["http://localhost:5050", "http://127.0.0.1:5050", "http://localhost:3000", "http://127.0.0.1:3000", "null"])
+FRONTEND_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'frontend')
+
+app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path='')
+
+ALLOWED_ORIGINS = os.environ.get('ALLOWED_ORIGINS', 'http://localhost:5050,http://127.0.0.1:5050,http://localhost:3000,http://127.0.0.1:3000').split(',')
+CORS(app, origins=ALLOWED_ORIGINS)
+
+@app.route('/')
+def serve_index():
+    return send_from_directory(FRONTEND_DIR, 'index.html')
+
+@app.route('/quiz')
+def serve_quiz():
+    return send_from_directory(FRONTEND_DIR, 'quiz.html')
+
+@app.route('/results')
+def serve_results():
+    return send_from_directory(FRONTEND_DIR, 'results.html')
 init_db()
 
 parties_data, dimensions_data = load_parties()

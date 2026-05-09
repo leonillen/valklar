@@ -1,4 +1,4 @@
-const API = 'http://localhost:5050/api';
+const API = '/api';
 const HOME_URL = 'index.html?v=20260428-party-colors';
 const ANSWER_OPTIONS = [
   { label: 'H\u00e5ller inte alls med', tone: 'strong-disagree' },

@@ -3,7 +3,8 @@ import json
 import os
 from datetime import datetime
 
-DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'valkompass.db')
+_DATA_DIR = os.environ.get('RAILWAY_VOLUME_MOUNT_PATH') or os.path.join(os.path.dirname(__file__), '..', 'data')
+DB_PATH = os.path.join(_DATA_DIR, 'valkompass.db')
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)
