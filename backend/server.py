@@ -1,6 +1,8 @@
 import sys, os
 sys.stdout.reconfigure(encoding='utf-8')
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+_backend_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(_backend_dir)
+sys.path.insert(0, _backend_dir)
 
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
